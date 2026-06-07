@@ -119,8 +119,8 @@ LLM 분석 결과는 다음과 같은 검토 분류로 정리했습니다.
 - Python, pandas, BeautifulSoup
 - 네이버 검색 API
 - Gemini API, ChatKHU Gateway LLM API
-- D3.js, d3-cloud, vis-network
-- HTML, CSS, JavaScript
+- JavaScript - D3.js, d3-cloud, vis-network
+- HTML, CSS
 
 ## 👥 참여
 
