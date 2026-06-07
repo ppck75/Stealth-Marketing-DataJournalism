@@ -2,7 +2,7 @@
 
 온라인 블로그·카페 게시글과 댓글 데이터를 수집해 후기형 광고, 스텔스 마케팅 의심 신호, 댓글 기반 구매 유도 구조를 분석한 데이터저널리즘 프로젝트입니다. 최종 산출물은 정적 웹페이지 형태의 탐사보도 기사입니다.
 
-웹기사 url: https://ppck75.github.io/Stealth-Marketing-DataJournalism/
+**웹기사 url**: https://ppck75.github.io/Stealth-Marketing-DataJournalism/
 
 ## 📌 프로젝트 개요
 
