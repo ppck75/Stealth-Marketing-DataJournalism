@@ -252,12 +252,6 @@ th, td {
 }
 th:first-child, td:first-child { text-align: left; }
 th { background: #eef7ff; color: #1f2937; font-weight: 800; }
-.word-panel {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 290px;
-  gap: 18px;
-  align-items: start;
-}
 .cloud-box,
 .network-box,
 .topic-network {
@@ -456,7 +450,6 @@ th { background: #eef7ff; color: #1f2937; font-weight: 800; }
   .visual-head { flex-direction: column; }
   .visual-head p { text-align: left; }
   .stat-grid, .mini-summary, .chart-grid, .image-grid { grid-template-columns: 1fr; }
-  .word-panel { grid-template-columns: 1fr; }
   .cloud-box { min-height: 430px; }
   .network-box { height: 520px; }
   .topic-network { height: 430px; min-height: 430px; }

@@ -51,19 +51,6 @@ function makeTable(selector, rows, columns) {
 }
 
 function renderWordCloud() {
-  const summary = ARTICLE_DATA.summaryData;
-  d3.select("#word-summary").selectAll(".mini-card")
-    .data(summary.category_summary)
-    .join("div")
-    .attr("class", "mini-card")
-    .html(d => `<strong>${d.category}</strong>전체 댓글 ${Number(d.total_comments).toLocaleString()}건<br>텍스트 댓글 ${Number(d.nonempty_comments).toLocaleString()}건`);
-  d3.select("#word-top-table").selectAll("tr")
-    .data(ARTICLE_DATA.wordData.slice(0, 20))
-    .join("tr")
-    .selectAll("td")
-    .data((d, i) => [i + 1, d.text, d.count])
-    .join("td")
-    .text(d => typeof d === "number" ? d.toLocaleString() : d);
   renderWordCloudOnly();
 }
 
