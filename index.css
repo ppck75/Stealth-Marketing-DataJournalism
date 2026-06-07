@@ -89,7 +89,7 @@ main .article-section:first-child {
   margin-bottom: 80px;
 }
 .article-body {
-  width: min(100%, 740px);
+  width: min(100%, 780px);
   margin: 0 auto;
 }
 .article-body + .article-body { margin-top: 32px; }
