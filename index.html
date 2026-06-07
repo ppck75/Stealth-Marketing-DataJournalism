@@ -1,467 +1,436 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ko">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>데이터로 파헤친 가짜 후기의 민낯</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700;800;900&family=Noto+Serif+KR:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/vis-network@9.1.9/styles/vis-network.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./index.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>데이터로 파헤친 가짜 후기의 민낯</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700;800;900&amp;family=Noto+Serif+KR:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/vis-network@9.1.9/styles/vis-network.min.css" rel="stylesheet"/>
+<link href="./index.css" rel="stylesheet"/>
 </head>
 <body>
-  <header class="hero section-fade">
-    <div class="hero__inner">
-      <p class="kicker">데이터저널리즘 탐사보도</p>
-      <h1>데이터로 파헤친 ‘가짜 후기’의 민낯</h1>
-      <p class="subtitle">당신이 본 그 글, 사실은 광고였습니다</p>
-    </div>
-  </header>
-
-  <main>
-    <section class="article-section section-fade">
-      <div class="article-body">
-        <blockquote>최근에 피부가 뒤집어져서, 인터넷에서 연고 검색하고 이것저것 찾아보면서 하나 구매했거든요. 저랑 같은 고민을 가진 분들이 후기를 좋게 쓰셨길래 검증이 좀 된 제품인가 싶었는데, 발랐더니 오히려 피부에 뭐가 더 나더라고요. 후기인 척하는 광고 아닌가 싶기도 하고요.</blockquote>
-        <p>대학생 A씨(22)는 피부가 뒤집어진 뒤 포털 검색창에 제품명을 넣었다. 블로그와 카페 후기가 줄줄이 떴다. “피부가 금방 진정됐다”, “꾸준히 바르니 효과를 봤다”, “저도 같은 고민이었는데 도움을 받았다”는 말이 반복됐다. 후기는 실제 소비자의 경험처럼 보였다. 댓글도 그랬다. 누군가 제품명을 물었고, 다른 이용자가 구매처를 알려줬다. A씨는 판매처로 연결되는 링크를 댓글에서 발견했고, 해당 제품을 구매했다.</p>
-        <p>A씨의 상태는 나아졌을까? 결과는 오히려 역효과였다. 사용자의 후기글에서 언급한 즉각적이고 생생한 효과, 댓글에서 이어지는 경험담은 A씨에게 해당되지 않았다.</p>
-        <p>A씨는 다시 후기를 열어봤다. 그제야 이상한 점이 보였다. 여러 글의 표현이 비슷했다. 댓글의 흐름도 닮아 있었다. 경험담이 나오고, 질문이 달리고, 제품 추천과 구매 링크가 이어졌다. 이상할 만큼 일관된 칭찬으로 가득한 후기들이 사실은 광고일지도 모른다는 의심이 들었다고 전했다.</p>
-      </div>
-      <figure class="inline-image wide-visual">
-        <img src="./assets/photo_01.png" alt="생성형 인공지능으로 제작한 온라인 상품 후기 이미지">
-        <figcaption>본 이미지는 기사의 이해를 돕기 위해 생성형 인공지능을 활용하여 제작되었습니다.</figcaption>
-      </figure>
-    </section>
-
-    <section class="article-section section-fade">
-      <div class="article-body">
-        <h2>의약품·건강기능식품 정보에 침투하는 ‘스텔스 마케팅’</h2>
-        <p>최근 의약품 및 건강기능식품 업계에는 ‘스텔스 마케팅(stealth marketing)’을 이용한 광고가 만연하다. 이는 소비자들이 광고라는 사실을 눈치채지 못하도록 자연스럽게 파고드는 홍보 전략이다. 흔히 ‘바이럴 마케팅(viral marketing)’이라는 이름으로도 불린다. 문제는 이러한 마케팅이 남용되면서 소비자가 객관적 정보와 광고를 구별하기가 점점 더 어려워진다는 점이다. 특히 의약품과 건강기능식품은 소비자의 건강에 맞닿아 있는 상품이라는 점에서 후기의 영향력이 더 크고, 잘못된 선택을 유도할 경우 위험성이 커질 수 있다.</p>
-        <p>이러한 문제를 발판삼아 취재진은 다이어트, 비염, 키성장, 탈모, 피부 등 5개 주제를 중심으로 온라인 게시글과 댓글을 분석했다. 스텔스 마케팅 의심 사례 약 1만 건을 수집했고, 댓글 약 7만 건을 별도로 분석했다. 대가성 표기가 확실하지 않은 글들을 중심으로, 취재진이 자체 개발한 '스텔스 마케팅 의심 신호 지표'를 통해 각 사례의 검토 필요도를 분류했다.</p>
-        <p>다만 이번 분석은 개별 글의 위법 여부를 확정하는 조사가 아니다. 실제 대가 지급 여부나 광고주 지시 여부까지 확인한 것은 아니다. 취재진이 확인한 것은 온라인 후기와 댓글에서 반복적으로 나타난 광고성 의심 패턴이다.</p>
-      </div>
-    </section>
-
-    <section class="article-section section-fade">
-      <div class="article-body">
-        <h2>데이터로 본 후기형 광고 의심 신호</h2>
-        <p>취재진은 먼저 5개 주제의 게시글과 댓글을 수집했다. 이후 13개 의심 지표를 적용해 각 사례를 ‘검토 우선’과 ‘검토 낮음’으로 분류했다. <a class="text-link" href="#criteria-section">의심지표 상세 확인하기 클릭</a></p>
-        <p>13개 지표에는 광고·협찬 표시 여부, 특정 제품명 반복, 유사 표현 반복, 질문과 답변의 흐름, 구매 링크 제공, 동일 계정의 반복 등장, 계정 활동 이력 확인 가능성 등이 포함됐다.</p>
-        <p>‘검토 우선’은 광고성 의심 신호가 상대적으로 많이 나타나 추가 확인이 필요한 사례를 뜻한다. ‘검토 낮음’은 의심 신호가 적게 나타난 사례다. 그러나 검토 낮음이라고 해서 반드시 정상 후기라는 뜻은 아니다.</p>
-      </div>
-      <div class="wide-visual visual-card">
-        <div class="visual-head"><h3>기본분석</h3><p>5개 주제 통합 분석 결과</p></div>
-        <div id="overall-cards" class="stat-grid"></div>
-        <div class="table-wrap"><div id="metric-table"></div></div>
-        <div class="table-wrap"><div id="risk-table"></div></div>
-      </div>
-      <div class="article-body">
-        <p>분석 결과, 5개 주제 모두에서 ‘검토 우선’ 비율이 ‘검토 낮음’보다 높게 나타났다. 이는 수집된 게시글과 댓글 가운데 광고성 의심 신호를 여러 개 충족한 사례가 적지 않았다는 의미다.</p>
-        <p>특히 다이어트, 탈모, 피부처럼 소비자의 고민과 제품 구매가 직접 연결되는 분야에서 후기형 표현이 반복적으로 나타났다. 게시글 본문에서는 제품 성분과 사용 경험이 강조됐다.</p>
-        <p>위 게시글은 일반 소비자의 자연스러운 경험담처럼 보인다. 하지만 같은 흐름이 여러 게시글에서 반복되면 이야기는 달라진다. 단순 후기보다 조직적 홍보 활동에 가까운 정황으로 볼 수 있기 때문이다.</p>
-      </div>
-      <div class="wide-visual visual-card">
-        <div class="visual-head"><h3>통합 댓글 워드클라우드</h3><p>5개 주제 댓글 전체의 빈도 상위 단어</p></div>
-        <div id="word-summary" class="mini-summary"></div>
-        <div class="word-panel">
-          <div id="word-cloud" class="cloud-box"></div>
-          <div class="table-wrap compact"><table><thead><tr><th>순위</th><th>단어</th><th>빈도</th></tr></thead><tbody id="word-top-table"></tbody></table></div>
-        </div>
-      </div>
-      <div class="article-body">
-        <p>댓글 약 7만 건을 통합해 분석한 결과, 여러 주제에서 ‘효과’, ‘꾸준히’, ‘후기’ 같은 단어가 반복적으로 등장했다. 이 단어들 자체가 광고를 의미하는 것은 아니다. 실제 소비자도 제품을 사용한 뒤 효과를 말할 수 있다. 꾸준히 사용했다는 표현도 자연스럽다. 후기라는 단어 역시 온라인 게시글에서 흔히 쓰인다.</p>
-        <p>문제는 단어가 결합되는 방식이다. 일부 게시글과 댓글에서는 “후기를 보고 샀다”, “꾸준히 사용했다”, “효과를 봤다”는 서사가 반복됐다. 여기에 “어디 제품인가요”, “구매처 알려주세요” 같은 질문이 붙었다.</p>
-        <p>취재진은 이 흐름에 주목했다. 단어 하나가 아니라, 단어와 댓글 역할이 함께 반복됐기 때문이다.</p>
-        <p>워드클라우드는 전체 경향을 보여주는 도구다. 광고 여부를 판정하는 증거는 아니다. 그래서 취재진은 단어 빈도만 보지 않았다. 의미연결망, 댓글 흐름, 반복 계정, 링크 제공 여부를 함께 확인했다.</p>
-      </div>
-      <div class="wide-visual visual-card">
-        <div class="visual-head"><h3>통합 댓글 의미연결망</h3><p>단어 동시출현 관계</p></div>
-        <div class="controls">
-          <label>단어 수 <input id="all-node-count" type="range" min="5" max="80" value="25" step="1"> <output id="all-node-count-out">25</output></label>
-          <label>최소 동시출현 <input id="all-min-edge" type="range" min="2" max="100" value="2" step="1"> <output id="all-min-edge-out">2</output></label>
-        </div>
-        <div id="network-summary" class="mini-summary"></div>
-        <div id="all-network" class="network-box"></div>
-      </div>
-      <div class="article-body">
-        <p>의미연결망 분석에서는 단어들이 어떤 관계로 함께 등장하는지 볼 수 있다. 전체 댓글 데이터에서 ‘어떤’과 ‘있을까요’처럼 질문형 표현의 연결이 두드러졌다.</p>
-        <p>질문은 후기형 광고에서 중요한 역할을 한다. 게시글 작성자가 제품을 직접 권하지 않아도, 댓글에서 누군가 질문을 던지면 제품 정보가 자연스럽게 등장할 수 있다.</p>
-        <p>예를 들어 한 이용자가 “어떤 제품인가요?”라고 묻는다. 다른 이용자는 “저도 써봤는데 괜찮았다”며 제품명을 말한다. 이는 자연스러운 소비자 간 정보 교환 활동이다.</p>
-        <p>그러나 이 흐름이 여러 게시글에서 반복되면 댓글 알바식 문법을 의심할 수 있다. 질문자, 답변자, 호응자가 역할을 나눠 제품을 노출하는 방식과 닮아 있기 때문이다.</p>
-        <p>취재진은 이를 ‘경험담 → 질문 → 추천 → 링크’ 구조로 정리했다. 이 구조는 이후 직접 검토한 의심 사례 50건의 게시글에서 더 뚜렷하게 확인됐다.</p>
-      </div>
-    </section>
-
-    <section class="article-section section-fade">
-      <div class="article-body">
-        <h2>댓글이 가장 많았던 분야는 ‘탈모’</h2>
-        <p>5개 주제 가운데 댓글 수가 가장 많았던 분야는 탈모였다. 탈모 관련 댓글은 18,579건이었다.</p>
-        <p>탈모는 장기 관리가 필요한 문제다. 소비자의 불안도 크다. 의학적 치료제, 두피 관리 제품, 건강기능식품, 화장품성 제품이 한꺼번에 검색된다. 소비자는 어떤 제품이 치료제이고, 어떤 제품이 보조 제품인지 구별하기 어렵다.</p>
-        <p>이런 분야에서는 후기가 더 강한 영향을 갖는다. “나도 빠지던 머리가 줄었다”, “두피가 좋아졌다”, “꾸준히 쓰면 효과가 있다”는 경험담은 공식 정보보다 더 설득력 있게 느껴질 수 있다. 취재진은 '탈모' 사례에 집중했다.</p>
-        <h2>‘검토 우선’ 댓글은 제품 경험담에 집중됐다</h2>
-        <p>탈모 관련 댓글을 ‘검토 우선’과 ‘검토 낮음’으로 나눠 살펴봤다. 검토 우선 항목에서는 ‘두피’, ‘정보’, ‘제품’, ‘관리’, ‘앰플’, ‘효과’ 같은 단어가 자주 나타났다.</p>
-        <p>이 단어들은 제품 사용 경험과 관리 권유에 가깝다. 댓글은 질환 자체보다 특정 제품군과 사용 경험을 중심으로 움직였다.</p>
-        <p>반면 검토 낮음 항목에서는 ‘부작용’, ‘약국’, ‘복용’, ‘병원’, ‘가격’, ‘처방’ 같은 단어가 상대적으로 많이 나타났다. 이 단어들은 의료적·실용적 정보 교환에 가깝다.</p>
-        <p>이 차이는 중요하다. 검토 우선 댓글에서는 탈모 문제를 치료 정보보다 제품 경험담과 관리법으로 풀어가는 흐름이 강했다. 반대로 검토 낮음 댓글에서는 약국, 병원, 처방처럼 의료 체계와 연결된 단어가 더 많이 보였다.</p>
-        <p>그러나 여기서도 단정은 금물이다. ‘앰플’이라는 단어가 나왔다고 광고라고 볼 수는 없다. ‘병원’이라는 단어가 나왔다고 정상 후기라고 볼 수도 없다. 핵심은 단어가 아니라 맥락이다. 제품 칭찬, 질문, 링크, 반복 계정이 함께 나타날 때 의심 신호가 강해진다.</p>
-      </div>
-      <div class="wide-visual visual-card">
-        <div class="visual-head"><h3>탈모 댓글 상위 10단어</h3><p>‘탈모’ 키워드를 제외한 상위 10개 단어 비교</p></div>
-        <div id="hair-bar-grid" class="chart-grid"></div>
-      </div>
-    </section>
-
-    <section class="article-section section-fade">
-      <div class="article-body">
-        <h2>치료 정보보다 제품 권유가 강했던 댓글망</h2>
-        <p>탈모 분야 의미연결망에서도 차이가 나타났다.</p>
-        <p>검토 우선 항목에서는 ‘관리-두피’, ‘앰플-탈모’, ‘두피-앰플’, ‘관리-탈모’, ‘제품-탈모’의 연결이 두드러졌다. 댓글 반응이 치료 정보보다 제품 사용과 관리 권유 쪽으로 조직되는 경향을 보였다.</p>
-        <p>검토 낮음 항목에서는 ‘미녹시딜-탈모’, ‘미녹시딜-효과’, ‘탈모-정보’, ‘탈모-효과’ 등의 연결이 나타났다. 미녹시딜은 탈모 치료제 성분으로 알려져 있다. 이 댓글들은 상대적으로 의료적 정보 교환의 성격을 띠었다.</p>
-        <p>다만 의학적으로 알려진 성분명의 언급 유무로 광고성 게시글을 의심할 수 없다. 광고성 글도 실제 후기도 성분명을 활용할 수 있다. 반대로 두피 앰플이나 관리 제품을 언급했다고 해서 모두 광고라고 단정할 수도 없다.</p>
-        <p>취재진이 주목한 것은 특정 단어 하나가 아니다. 제품 권유형 표현, 댓글 흐름, 구매 링크 제공, 반복 계정이 함께 나타나는 구조다.</p>
-      </div>
-      <div class="wide-visual visual-card">
-        <div class="visual-head"><h3>탈모 댓글 의미연결망</h3><p>검토분류별 동시출현 구조</p></div>
-        <div class="controls">
-          <label>표시 단어 수 <input id="hair-node-count" type="range" min="8" max="28" value="15"> <output id="hair-node-out">15</output></label>
-          <label>최소 동시출현 <input id="hair-edge-count" type="range" min="2" max="20" value="10"> <output id="hair-edge-out">10</output></label>
-        </div>
-        <div id="hair-network-grid" class="chart-grid"></div>
-      </div>
-    </section>
-
-    <section class="article-section section-fade">
-      <div class="article-body">
-        <h2>‘입소문’은 상품이었다…대행사가 설계한 바이럴 마케팅의 공장</h2>
-        <p>취재진은 댓글 알바 의심 구조가 실제 바이럴 마케팅 시장에서 어떤 방식으로 상품화되고 있는지 확인했다. 온라인에서 어렵지 않게 바이럴 마케팅 대행 업무를 공개적으로 홍보하는 여러 업체를 찾을 수 있었다. 이 가운데 장기간 운영 이력과 대규모 대행 실적을 내세운 주요 업체 두 곳의 공개 서비스 소개 자료를 살펴봤다.</p>
-      </div>
-      <figure class="wide-image wide-visual agency-image"><img src="./assets/photo_09.png" alt="바이럴 마케팅 대행사 웹 페이지 화면"><figcaption>실제 바이럴 마케팅 대행사 웹 페이지 화면 중</figcaption></figure>
-      <div class="article-body">
-        <p>한 바이럴 마케팅 대행사는 자사 서비스 유형을 ‘Q&amp;A형’, ‘후기형’, ‘핫딜형’, ‘정보배포형’으로 나눠 설명하고 있었다. 업체는 Q&amp;A형에 대해 “질문형 게시글과 답변형 댓글을 통해 자연스러운 효과를 유도하는 방식”이라고 소개했다. 후기형은 후기 내용과 사진을 함께 사용해 게시하는 방식, 핫딜형은 URL과 이미지를 활용해 상품 정보를 함께 삽입하는 방식으로 설명됐다. 정보배포형은 각종 신상품 정보를 활용해 문서 배포를 유도하는 방식으로 제시됐다.</p>
-      </div>
-      <figure class="wide-image wide-visual agency-image"><img src="./assets/photo_10.png" alt="바이럴 마케팅 대행사 서비스 소개 화면"><figcaption>실제 바이럴 마케팅 대행사 웹 페이지 화면 중</figcaption></figure>
-      <div class="article-body">
-        <p>다른 대행사 자료에서도 비슷한 단서가 확인됐다. 해당 업체는 ‘맞춤형 원고 작성’, ‘브랜드 및 시장 조사’, ‘브랜드 연계 사진 콘텐츠 구성’, ‘30일 관리’, ‘데일리 모니터링’, ‘게시글·고객 소통·쪽지 관리’ 등을 서비스 항목으로 내세웠다. 단순히 게시글을 작성하는 데 그치지 않고, 게시 이후의 반응과 소통까지 관리 대상으로 삼고 있는 것이다.</p>
-        <p>이 대목은 댓글 공간이 단순한 소비자 반응만으로 구성되지 않을 수 있음을 보여준다. 소비자가 보기에는 자연스러운 질문과 답변처럼 보이지만, 대행 시장에서는 질문형 게시글, 후기형 콘텐츠, 댓글 관리, 링크 삽입이 하나의 마케팅 상품으로 묶여 판매되고 있었다.</p>
-        <p>이 자료들이 보여주는 것은 바이럴 마케팅이 더 이상 몇몇 계정의 산발적 홍보에 그치지 않는다는 점이다. 질문형 게시글, 후기형 콘텐츠, 핫딜 링크, 댓글 관리, 30일 모니터링은 각각 별개의 활동이 아니라 대행사가 판매하는 서비스 항목으로 분류돼 있었다. 소비자가 마주한 하나의 후기와 댓글은 자발적 입소문처럼 보이지만, 실제로는 기업 주도적 마케팅의 일부일 수 있다.</p>
-        <p>취재진은 해당 업체의 온라인 사이트에서 광고주 지침을 포함한 일종의 '바이럴 마케팅 대행사 가이드라인'을 어렵지 않게 입수할 수 있었다. 이를 정리하여 50건의 의심 사례 기반 심층 분석에 교차 검증 기준으로 활용했다.</p>
-      </div>
-    </section>
-
-    <section class="article-section section-fade">
-      <div class="article-body">
-        <h2>경험담인 줄 알았지만… 숨겨진 구매 유도 흔적을 발견</h2>
-        <p>취재진은 13개 의심 지표 가운데 다수를 충족한 게시글 50건을 별도로 골랐다. 이후 바이럴 마케팅 대행사 가이드라인과 함께 본문과 댓글 전체를 직접 검토했다.</p>
-        <p>공통적으로 특정 제품의 장점을 강조하거나 제품 성분에 대한 긴 설명이 반복됐다. 특히, 다른 제품 또는 타사의 유사 상품과 비교하는 표현이 눈에 띄었다.</p>
-        <p>더 눈에 띈 것은 댓글이었다. 일부 댓글은 일정한 순서로 흘러갔다.</p>
-      </div>
-      <figure class="wide-image wide-visual compact-image"><img src="./assets/photo_02.png" alt="댓글 속 구매 유도 링크 사례"><figcaption>의심 사례 게시글에서 확인된 댓글 흐름. 개인정보, 상품명, URL은 비식별 처리 필요.</figcaption></figure>
-      <div class="article-body">
-        <p>첫째, 작성자나 댓글 이용자가 제품 사용 경험을 공유했다. 둘째, 다른 이용자가 제품명이나 구매처를 물었다. 셋째, 또 다른 이용자가 제품을 칭찬하거나 구매 링크를 제공했다.</p>
-      </div>
-      <figure class="wide-image wide-visual compact-image"><img src="./assets/photo_03.png" alt="댓글 속 구매 유도 링크 추가 사례"><figcaption>50건 게시글 중 댓글 흐름이 부자연스러운 사례</figcaption></figure>
-      <div class="article-body">
-        <p>겉으로는 자연스러운 대화처럼 보였다. 하지만 같은 흐름이 여러 게시글에서 반복됐다. 이는 댓글 알바식 홍보 전략으로 의심할 수 있는 대목이다.</p>
-        <p>소비자는 직접 정보를 찾아낸다고 느낀다. 하지만 실제로는 질문과 답변을 따라가다 구매 페이지에 도착한다. 광고는 보이지 않는다. 대신 경험담과 댓글이 소비자를 움직인다.</p>
-        <h2>같은 계정이 질문자와 답변자로 번갈아 등장했다</h2>
-        <p>취재진은 직접 검토한 게시글 일부에서 동일하거나 유사한 계정이 반복적으로 등장하는 정황을 포착했다.</p>
-      </div>
-      <figure class="wide-image wide-visual compact-image"><img src="./assets/photo_04.png" alt="반복 계정 댓글 사례"></figure>
-      <div class="article-body">
-        <p>한 게시글에서는 구매 링크를 제공하던 계정이 다른 게시글에서는 제품을 묻는 질문자로 등장했다. 반대로 질문자였던 계정이 다른 게시글에서는 추천자 역할을 맡는 사례도 있었다. 취재진은 광고성 의심도가 높은 50건의 게시글 댓글 중에서 위와 같은 유사 사례를 8건 확인했다.</p>
-      </div>
-      <figure class="wide-image wide-visual compact-image compact-image--small"><img src="./assets/photo_05.png" alt="탈퇴 계정 화면"><figcaption>댓글 흔적을 확인하려 했으나 계정은 이미 탈퇴한 상태였다.</figcaption></figure>
-      <div class="article-body">
-        <p>취재진은 해당 댓글을 게시한 작성자와 접촉하고자 상세 프로필을 조회했다. 하지만, 작성자의 실제 신원을 확인할 수 없었다. 계정은 프로필 조회가 불가능하거나 이미 탈퇴한 상태였기 때문이다.</p>
-        <p>계정이 탈퇴했다는 사실만으로 증거 삭제를 단정할 수는 없다. 계정 탈퇴에는 여러 이유가 있을 수 있다. 그러나 댓글은 남아 있고 계정 정보는 사라진 상태라면, 사후 검증은 어려워진다. 플랫폼 차원의 기록 관리와 광고성 댓글 관리가 필요한 이유다.</p>
-      </div>
-    </section>
-
-    <section class="article-section section-fade">
-      <div class="article-body">
-        <h2>업계 관계자 인터뷰, “후기 몇 건, 댓글 관리까지”…바이럴은 패키지로 팔린다</h2>
-      </div>
-      <figure class="wide-image wide-visual interview-image"><img src="./assets/photo_07.png" alt="생성형 인공지능으로 제작한 업계 관계자 인터뷰 이미지"><figcaption>본 이미지는 기사의 이해를 돕기 위해 생성형 인공지능을 활용하여 제작되었습니다.</figcaption></figure>
-      <div class="article-body">
-        <p>취재진은 온라인 바이럴 마케팅 업무를 경험한 업계 관계자 B씨를 인터뷰했다. B씨의 설명은 취재진이 데이터에서 확인한 댓글 흐름과 맞닿아 있었다. 바이럴 마케팅은 단순히 게시글 한두 개를 올리는 방식이 아니었다. 블로그 후기, 인스타그램 게시물, 카페 글, 숏폼 영상, 댓글 관리가 하나의 패키지처럼 묶여 움직였다.</p>
-        <p>B씨는 바이럴 마케팅의 효과에 대해 “효과는 있지만, 얼마나 있는지를 숫자로 딱 떼어 증명하기는 어렵다”고 말했다. 노출과 도달은 늘지만, 그것이 실제 구매로 이어졌는지를 정확히 추적하기는 어렵다는 것이다. 다만 그는 “대형 H&B 매장 입점 직후에 바이럴을 깔아두면 검색량이 눈에 띄게 뜬다”고 말했다.</p>
-        <p>업체들이 바이럴을 계속 활용하는 이유도 여기에 있다. 매출과 직접 연결하기는 어렵지만, 검색량, 조회수, 도달, 저장 수, 리뷰 증가 속도 같은 간접 지표가 움직이기 때문이다. B씨는 “인스타그램과 틱톡은 조회수, 도달, 저장 수를 보고, 블로그는 검색 유입과 상위 노출 여부를 본다”고 설명했다. 특히 그는 “네이버 검색량 추이와 O리브영 리뷰가 늘어나는 속도를 중요하게 본다”고 말했다.</p>
-        <p>바이럴의 방식도 구체적이었다. B씨는 “제일 흔한 건 네이버 블로그 후기를 까는 것”이라고 했다. 체험단을 돌려 후기 콘텐츠를 쌓고, 인스타그램에서는 일반인처럼 보이는 계정이 제품을 자연스럽게 소개한다. 틱톡이나 유튜브 숏폼에서는 “요즘 이거 다 쓴다더라”는 식으로 제품을 끼워 넣는다.</p>
-        <p>대행업체의 역할은 더 넓었다. B씨는 “블로그 후기 몇 건, 인스타 게시물 몇 건, 카페 글 몇 건 이런 식으로 패키지처럼 묶어서 온다”며 “콘텐츠 제작부터 배포, 댓글 관리까지 해주는 데도 있다”고 말했다.</p>
-        <p>이 대목은 이번 취재의 데이터 분석 결과와 연결된다. 취재진은 일부 게시글에서 경험담, 질문, 제품 추천, 구매 링크가 차례로 이어지는 댓글 흐름을 확인했다. 현업자의 설명처럼 댓글 관리가 바이럴 패키지 안에 포함될 수 있다면, 댓글 공간은 단순한 소비자 반응이 아니라 마케팅의 일부로 활용될 가능성이 있다.</p>
-        <p>주요 타깃도 분명했다. B씨는 “20대에서 30대 초반 여성이 메인”이라고 말했다. 이들이 제품을 사기 전 블로그, 유튜브, 올리브영 리뷰를 두루 확인하기 때문에 바이럴도 그 동선에 맞춰 깔린다는 설명이다. 소비자가 정보를 확인하는 경로가 곧 마케팅이 배치되는 경로가 되는 셈이다.</p>
-        <p>B씨는 바이럴 콘텐츠를 구별하는 기준도 말했다. 그는 “갑자기 여기저기서 똑같은 표현으로 칭찬이 쏟아지면 의심한다”고 했다. 진짜 입소문은 사람마다 말투와 관심 포인트가 다르다는 것이다. “누구는 향을 말하고, 누구는 발림성을 말한다. 그런데 작업된 건 다들 같은 셀링포인트만 딱딱 짚는다”고 말했다.</p>
-        <p>이는 취재진의 워드클라우드와 의미연결망 분석 결과와도 맞닿아 있다. 댓글 데이터에서는 ‘효과’, ‘꾸준히’, ‘후기’ 같은 표현이 여러 주제에서 반복됐다. 탈모 분야 검토 우선 댓글에서는 ‘두피’, ‘제품’, ‘관리’, ‘앰플’, ‘효과’ 같은 단어가 함께 나타났다. 단어 자체가 광고를 뜻하는 것은 아니지만, 같은 셀링포인트가 반복될 때 광고성 의심 신호는 강해진다.</p>
-        <p>B씨는 바이럴이 티가 나는 이유도 설명했다. “아무리 자연스럽게 하려고 해도 결국 의도가 들어간 콘텐츠라 어느 정도는 티가 날 수밖에 없다”고 했다. 이어 “소비자가 똑똑해진 속도를 마케터가 못 따라가는 느낌”이라고 말했다.</p>
-        <p>그러나 현장에서 모든 게시글과 댓글을 사후 점검하기는 어렵다고 했다. 댓글 작성자 닉네임이 비슷하거나 반복되는 문제에 대해서도 B씨는 “직접 전부 사후 체크하지는 않는다”고 말했다. 대행업체와 광고주 사이에서 콘텐츠는 패키지 단위로 운영되지만, 실제 댓글 하나하나가 어떻게 관리되는지는 불투명한 것이다.</p>
-        <p>결국 문제는 개별 후기 하나가 아니다. 후기, 검색량, 리뷰, 댓글, 링크가 하나의 흐름으로 연결되는 구조다. 소비자는 자발적 입소문이라고 느끼지만, 그 뒤에는 검색 동선과 구매 동선을 겨냥한 마케팅 설계가 있을 수 있다.</p>
-        <p>B씨는 후기형 콘텐츠가 노출과 도달을 높이는 데 효과가 있다고 말했다. 다만 실제 구매로 이어졌는지를 정확히 추적하기는 어렵다고 했다.</p>
-        <p>B씨는 “네이버 블로그, 온라인 커뮤니티, 인스타그램·틱톡 숏폼 등에서 후기를 쌓는 방식이 많이 쓰인다”고 말했다. 주요 타깃으로는 검색량이 많고 후기 의존도가 높은 20대와 30대 초반 소비자를 꼽았다.</p>
-        <p>B씨는 후기형 마케팅의 한계도 말했다. “똑같은 표현으로 칭찬이 반복되면 소비자들도 의심한다”는 것이다. 그는 “자연스럽게 만들려고 해도 결국 의도가 들어간 콘텐츠라 어느 정도는 티가 난다”고 했다.</p>
-        <p>그러나 사후 점검은 쉽지 않다고 말했다. 같은 셀링포인트가 반복되고, 여러 작성자가 비슷한 표현을 쓰면서 콘텐츠가 정형화되는 경우가 많다는 설명이다.</p>
-        <p>이 인터뷰는 후기형 광고가 어떻게 만들어지고, 왜 비슷한 문법으로 반복되는지 보여준다. 동시에 업계가 문제를 알고도 적극적으로 통제하지 못하는 현실도 드러낸다.</p>
-      </div>
-    </section>
-
-    <section class="article-section section-fade">
-      <div class="article-body">
-        <h2>왜 댓글 알바식 후기는 사라지지 않나</h2>
-        <p>댓글 알바식 후기가 반복되는 이유는 단순하다. 효과적이기 때문이다.</p>
-        <p>소비자는 광고보다 후기를 더 신뢰한다. 특히 건강 문제에서는 자신과 비슷한 고민을 가진 사람의 경험담에 더 쉽게 반응한다. “나도 같은 증상이었다”는 문장은 제품 설명보다 강하다.</p>
-        <p>업체 입장에서도 후기형 콘텐츠는 유리하다. 직접 광고보다 거부감이 적다. 검색 결과에 오래 남는다. 댓글이 붙으면 글은 더 자연스러워 보인다. 질문과 답변이 이어지면 제품 정보가 광고가 아니라 대화처럼 보인다.</p>
-        <p>플랫폼 구조도 영향을 준다. 게시글 본문에는 광고 표시가 있더라도 댓글에는 표시가 없는 경우가 많다. 구매 링크가 댓글에 남겨지면 소비자는 이를 정보 공유로 받아들일 수 있다.</p>
-        <p>규제의 사각지대도 있다. 광고 표시 기준은 존재하지만, 댓글형 홍보와 후기형 게시글은 실제 운영 방식이 빠르게 변한다. 제품명은 숨기고 성분명만 말하거나, 직접 구매 링크 대신 검색어를 알려주는 방식도 가능하다. 단속 기준보다 마케팅 방식이 빠르게 바뀌는 것이다.</p>
-        <p>결국 문제는 개별 댓글 몇 개가 아니다. 광고가 소비자 대화의 형식을 빌려 숨어드는 구조다.</p>
-      </div>
-    </section>
-
-    <section id="criteria-section" class="article-section section-fade">
-      <div class="article-body">
-        <h2>스텔스 마케팅 의심 신호 지표</h2>
-        <p>취재진은 이번 분석에 활용한 13개 의심 지표를 소비자용 체크리스트로 정리했다.</p>
-      </div>
-      <div class="full-visual visual-card criteria-card">
-        <div class="visual-head"><h3>스텔스 마케팅 의심 신호 지표</h3><p>13개 텍스트 분석 지표</p></div>
-      <table>
-        <colgroup>
-          <col class="code-col">
-          <col class="item-col">
-          <col class="criteria-col">
-          <col class="ref-col">
-          <col class="reason-col">
-        </colgroup>
-        <thead>
-          <tr>
-            <th>번호</th>
-            <th>지표항목</th>
-            <th>판별 기준</th>
-            <th>참조</th>
-            <th>중요이유</th>
-          </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td class="code"><span>C1</span></td>
-          <td class="item">
-            <strong>후기/체험담 형식</strong>
-            <details class="examples-box">
-              <summary>예시 보기</summary>
-              <p>직접 써봤는데요, 솔직 후기, 체험단 리뷰</p>
-            </details>
-          </td>
-          <td class="criteria">게시글이 실제 소비자 경험담처럼 구성되는지 확인합니다.</td>
-          <td class="ref">신상무 외 (2016), 복식문화연구</td>
-          <td class="reason">소비자 후기 형식은 신뢰도를 높이고 광고임을 인식하기 어렵게 만들어 설득 효과를 극대화함.</td>
-        </tr>
-        <tr>
-          <td class="code"><span>C2</span></td>
-          <td class="item">
-            <strong>SNS 공유 유도 표현</strong>
-            <details class="examples-box">
-              <summary>예시 보기</summary>
-              <p>저장 필수, 공유해 주세요, 태그 이벤트, 주변에 알려주세요</p>
-            </details>
-          </td>
-          <td class="criteria">저장·공유·태그 등 확산 행동을 유도하는 표현이 있는지 확인합니다.</td>
-          <td class="ref">이동대·최미리 (2020), 소비문화연구</td>
-          <td class="reason">자발적 공유 유도는 바이럴의 본질임. 플로우와 팔로워십을 자극해 재전파 의도를 높임.</td>
-        </tr>
-        <tr>
-          <td class="code"><span>C3</span></td>
-          <td class="item">
-            <strong>소비자 추천 표현</strong>
-            <details class="examples-box">
-              <summary>예시 보기</summary>
-              <p>강추, 이거 진짜 좋음, 안 사면 후회해요, 주변에도 알려줬어요</p>
-            </details>
-          </td>
-          <td class="criteria">소비자의 자발적 추천처럼 보이는 표현이 있는지 확인합니다.</td>
-          <td class="ref">신상무 외 (2016), 손봉현 (2020)</td>
-          <td class="reason">개인 추천처럼 보이면 설득지식 활성화가 억제되고 소비자 신뢰도가 높아질 수 있음.</td>
-        </tr>
-        <tr>
-          <td class="code"><span>C4</span></td>
-          <td class="item">
-            <strong>숨겨진 브랜드 홍보 의도</strong>
-            <details class="examples-box">
-              <summary>예시 보기</summary>
-              <p>브랜드명 간접 언급, 정보성 글 안에 제품 링크나 할인코드 삽입</p>
-            </details>
-          </td>
-          <td class="criteria">브랜드명, 제품 링크, 할인코드 등이 정보 제공 형식 안에 자연스럽게 삽입되는지 확인합니다.</td>
-          <td class="ref">KCI ART002347744 (2018), 광고PR실학연구</td>
-          <td class="reason">광고와 정보의 구분이 모호해지면 설득지식을 우회할 수 있음. 소비자가 광고로 인식하지 못할수록 설득 효과가 커질 수 있음.</td>
-        </tr>
-        <tr>
-          <td class="code"><span>C5</span></td>
-          <td class="item">
-            <strong>감정적 호소 표현</strong>
-            <details class="examples-box">
-              <summary>예시 보기</summary>
-              <p>눈물남, 완전 공감, 나만 알기 아까워서, 써보고 소름 돋았음</p>
-            </details>
-          </td>
-          <td class="criteria">공감·놀람·감동 등 감정 반응을 통해 제품 호감을 만드는 표현이 있는지 확인합니다.</td>
-          <td class="ref">이동대·최미리 (2020), 소비문화연구</td>
-          <td class="reason">감정 유발이 강할수록 몰입도와 공유 의도가 높아질 수 있음. 바이럴 확산의 핵심 심리 동인임.</td>
-        </tr>
-        <tr>
-          <td class="code"><span>C6</span></td>
-          <td class="item">
-            <strong>참여·이벤트형 구조</strong>
-            <details class="examples-box">
-              <summary>예시 보기</summary>
-              <p>챌린지, 인증샷 이벤트, 리그램하면 추첨, 댓글 참여 유도</p>
-            </details>
-          </td>
-          <td class="criteria">댓글, 인증, 공유 등 독자 참여를 요구하거나 유도하는 구조가 포함되어 있는지 확인합니다.</td>
-          <td class="ref">이동대·최미리 (2020), 소비문화연구</td>
-          <td class="reason">소비자를 콘텐츠 확산자로 만드는 바이럴 메커니즘임. 팔로워십과 커뮤니티 소속감을 활용함.</td>
-        </tr>
-        <tr>
-          <td class="code"><span>C7</span></td>
-          <td class="item">
-            <strong>협찬/광고비 수수 사실 불분명</strong>
-            <details class="examples-box">
-              <summary>예시 보기</summary>
-              <p>#협찬, #광고 없이 제품 소개</p>
-            </details>
-          </td>
-          <td class="criteria">제품 소개가 있으나 경제적 이해관계 표시가 명확하지 않은지 확인합니다.</td>
-          <td class="ref">조재영 (2021), 차세대융합기술학회논문지</td>
-          <td class="reason">공정거래위원회 기만광고 심결의 핵심 기준임. 경제적 이해관계 미표시는 표시광고법 위반 소지가 있음.</td>
-        </tr>
-        <tr>
-          <td class="code"><span>C8</span></td>
-          <td class="item">
-            <strong>인플루언서/파워블로거 형식</strong>
-            <details class="examples-box">
-              <summary>예시 보기</summary>
-              <p>팔로워 수 강조, 전문가 포지셔닝, 정기적 제품 소개 콘텐츠</p>
-            </details>
-          </td>
-          <td class="criteria">작성자가 영향력, 전문성, 정기 리뷰 형식을 통해 신뢰를 구성하는지 확인합니다.</td>
-          <td class="ref">신상무 외 (2016), 손봉현 (2020)</td>
-          <td class="reason">인플루언서의 신뢰성과 친밀감은 소비자 설득의 핵심 경로임. 광고 회피 심리를 낮추는 효과가 있을 수 있음.</td>
-        </tr>
-        <tr>
-          <td class="code"><span>C9</span></td>
-          <td class="item">
-            <strong>일방적 긍정 표현 반복</strong>
-            <details class="examples-box">
-              <summary>예시 보기</summary>
-              <p>단점 언급 없이 극찬 반복, 완벽해요, 단점을 모르겠어요</p>
-            </details>
-          </td>
-          <td class="criteria">단점이나 한계 없이 장점과 극찬이 반복되는지 확인합니다.</td>
-          <td class="ref">신상무 외 (2016), 김인규·차성수 (2020)</td>
-          <td class="reason">지나치게 긍정적인 텍스트는 기획 콘텐츠 가능성을 시사함. 자발적 후기와 구분하는 언어적 지표가 될 수 있음.</td>
-        </tr>
-        <tr>
-          <td class="code"><span>C10</span></td>
-          <td class="item">
-            <strong>타 업체 비교 우월성 강조</strong>
-            <details class="examples-box">
-              <summary>예시 보기</summary>
-              <p>예전에 쓰던 다른 곳들은 다 문제가 많았는데 여기는 다르다, 타사의 단점을 구체적으로 지적하며 현재 업체의 장점을 부각하는 구조</p>
-            </details>
-          </td>
-          <td class="criteria">타 제품·업체를 낮추고 현재 제품이나 업체의 우월성을 부각하는 구조가 있는지 확인합니다.</td>
-          <td class="ref">COLING 2020: 커뮤니티 내 과도한 칭찬 글이 먹튀 유도에 사용되는 패턴 분석, 조작된 칭찬 글의 특징적 패턴</td>
-          <td class="reason">비교 대상을 설정해 해당 업체가 더 안전하고 합리적인 선택지라는 착시와 논리적 인상을 심어 신뢰를 유도할 수 있음.</td>
-        </tr>
-        <tr>
-          <td class="code"><span>C11</span></td>
-          <td class="item">
-            <strong>부자연스러운 마케팅 언어</strong>
-            <details class="examples-box">
-              <summary>예시 보기</summary>
-              <p>최고의 서비스, 완벽한 시스템 같은 정제되고 단정적인 마케팅 단어 남발, 오탈자나 자연스러운 실수가 없는 완벽한 문장, 실제 경험에서 나오는 구체적 디테일의 결여</p>
-            </details>
-          </td>
-          <td class="criteria">정제되고 단정적인 마케팅 단어가 빈번하거나 실제 경험에서 나오는 구체적 디테일이 부족한지 확인합니다.</td>
-          <td class="ref">COLING 2020: 커뮤니티 내 과도한 칭찬 글이 먹튀 유도에 사용되는 패턴 분석, 언어 사용의 부자연스러움</td>
-          <td class="reason">일반 소비자의 자발적 후기에서 나타나기 어려운 특징으로, 사전에 기획·가공된 홍보용 스크립트일 가능성을 시사하는 언어적 지표임.</td>
-        </tr>
-        <tr>
-          <td class="code"><span>C12</span></td>
-          <td class="item">
-            <strong>객관적 근거 없는 허위·과장</strong>
-            <details class="examples-box">
-              <summary>예시 보기</summary>
-              <p>100% 효과 보장, 부작용 전혀 없음 등 객관적 검증이 불가능한 단정적 표현, 자발적 리뷰를 가장하여 효능을 부풀린 확정적 문구</p>
-            </details>
-          </td>
-          <td class="criteria">검증하기 어려운 단정 표현이나 효능 과장 표현이 있는지 확인합니다.</td>
-          <td class="ref">고준용 변호사, 「인플루언서 뒷광고 법적 책임, 계약 전 반드시 확인할 7가지」(2026.04.16); 표시광고법 제3조 제1항 제1호 거짓·과장의 표시·광고 금지</td>
-          <td class="reason">광고·협찬 고지를 명확히 했더라도 내용 자체가 허위·과장일 경우 별도의 기만행위가 될 수 있음. 특히 제품 효능 과장은 소비자의 합리적 의사결정을 방해하는 핵심 요소임.</td>
-        </tr>
-        <tr>
-          <td class="code"><span>C13</span></td>
-          <td class="item">
-            <strong>조건부 표현으로 대가성 흐림</strong>
-            <details class="examples-box">
-              <summary>예시 보기</summary>
-              <p>일정 수수료를 지급받을 수 있음, 판매에 따라 커미션이 발생할 수도 있음</p>
-            </details>
-          </td>
-          <td class="criteria">대가 수수 여부를 확정하지 않고 조건부·불확정 표현으로 흐리는지 확인합니다.</td>
-          <td class="ref">추천·보증 등에 관한 표시·광고 심사지침 [시행 2024.12.1.] [공정거래위원회예규 제473호, 2024.11.13. 일부개정]</td>
-          <td class="reason">조건부·불확정 표현은 소비자에게 '광고가 아닐 수도 있다'는 오인을 유발할 수 있음. 경제적 이해관계를 명확하고 단정적으로 표시해야 한다는 공정위 지침을 우회하는 방식임.</td>
-        </tr>
-        </tbody>
-      </table>
-      </div>
-      <div class="article-body">
-        <p>이 체크리스트는 광고 여부를 판정하는 도구가 아니다. 몇 개 항목에 해당한다고 해서 반드시 댓글 알바나 광고라고 볼 수는 없다. 해당하지 않는다고 해서 안전한 후기라고 단정할 수도 없다.</p>
-        <p>그러나 소비자가 후기를 비판적으로 읽기 위한 최소한의 기준은 될 수 있다. 소비자는 이 의심 지표를 함께 본다면, 숨겨진 마케팅에 속지 않고 보다 현명한 선택을 할 수 있을 것이다.</p>
-      </div>
-    </section>
-
-    <section class="article-section section-fade">
-      <div class="article-body">
-        <h2>소비자는 무엇을 확인해야 하나</h2>
-        <p>후기형 광고를 완벽하게 걸러내기는 어렵다. 그래도 몇 가지 신호를 확인하면 위험을 줄일 수 있다.</p>
-        <p>첫째, 광고·협찬·제품 제공 표시가 있는지 봐야 한다. 표시가 너무 작거나, 글 끝에만 있거나, 댓글에만 구매 링크가 있다면 주의해야 한다.</p>
-        <p>둘째, 댓글 흐름을 봐야 한다. 경험담 뒤에 질문이 달리고, 곧바로 제품명이나 구매 링크가 제공된다면 의심해볼 필요가 있다.</p>
-        <p>셋째, 여러 게시글을 검토해야 한다. 해당 제품 후기를 다룬 게시글들이 비슷한 말투로 질문하거나 추천한다면 댓글 알바 의심 신호일 수 있다. 스텔스 마케팅은 단독으로 있을 때 실제 후기처럼 보이지만, 여러 게시글과 댓글을 검토할 때 의심 정황은 뚜렷해진다. 취재진은 앞서 이러한 연결고리를 확인한 바 있다.</p>
-        <p>넷째, 건강기능식품과 식품 관련 제품은 공식 정보를 먼저 확인해야 한다. 식품안전나라 건강기능식품 검색에서는 품목신고 제품 정보를 조회할 수 있다. 후기보다 공적 정보 확인이 먼저다.</p>
-      </div>
-      <figure class="wide-image wide-visual"><img src="./assets/photo_06.png" alt="식품안전나라 화면"><figcaption>식품안전나라 제품 정보 확인 화면. 식품안전나라 누리집(https://www.foodsafetykorea.go.kr/main.do)</figcaption></figure>
-      <figure class="wide-image wide-visual mfds-image"><img src="./assets/photo_08.png" alt="온라인 광고 주의 안내"><figcaption>식품의약품안전처 제공</figcaption></figure>
-      <div class="article-body">
-        <p>또한, 식약처는 소비자에게 온라인상에서 식약처로부터 기능성을 인정받은 건강기능식품 제품을 구매하고자 하는 경우 제품에 표시된 ‘건강기능식품 인증마크’를 확인하고 구매할 것을 당부한 바 있다. 기만적 마케팅을 구별하기 위한 소비자의 확인 절차가 필요한 시점이다.</p>
-      </div>
-    </section>
-
-    <section class="article-section section-fade">
-      <div class="article-body">
-        <h2>대책은 소비자 조심만으로 끝나서는 안 된다</h2>
-        <p>소비자가 조심하는 것만으로는 부족하다. 후기형 광고는 개인의 판단력을 넘어서는 방식으로 설계된다. 경험담, 질문, 링크가 이어지는 구조는 광고를 광고처럼 보이지 않게 만든다.</p>
-        <p>플랫폼은 반복 계정과 구매 링크 댓글을 더 적극적으로 관리해야 한다. 특정 제품군 게시글마다 같은 계정이 비슷한 댓글을 남기는지, 질문자와 추천자 역할이 반복되는지 감지할 필요가 있다.</p>
-        <p>광고 업계도 경제적 이해관계를 숨기지 않아야 한다. 제품을 제공받았거나 대가를 받았다면 소비자가 쉽게 알아볼 수 있게 표시해야 한다. 댓글을 통한 홍보 역시 예외가 되어서는 안 된다.</p>
-        <p>규제기관은 건강 관련 후기형 광고를 더 세밀하게 들여다봐야 한다. 특히 치료 효과를 암시하는 표현, 댓글을 통한 구매 유도, 광고 표시 없는 링크 제공은 소비자 오인을 부를 수 있다.</p>
-        <p>이번 취재가 확인한 것은 하나의 제품이나 하나의 계정이 아니다. 온라인 후기 생태계 안에서 광고와 경험담의 경계가 흐려지고 있다는 사실이다.</p>
-        <p>후기는 소비자의 경험이어야 한다. 광고라면 광고라고 말해야 한다. 그 단순한 원칙이 지켜지지 않을 때, 평범한 댓글 하나도 소비자를 구매로 이끄는 숨은 통로가 될 수 있다.</p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>데이터저널리즘 프로젝트 웹페이지</p>
-    <div class="reporters" aria-label="기자 명단">
-      <strong>취재·분석</strong>
-      <span>김태린 기자 xofls0929@khu.ac.kr</span>
-      <span>남혜정 기자 ncw3463@khu.ac.kr</span>
-      <span>박찬규 기자 ppck75@khu.ac.kr</span>
-      <span>이민형 기자 minhyeongi@khu.ac.kr</span>
-      <span>TSANG CHEUK LING 기자 charon372c@khu.ac.kr</span>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-  <script src="https://cdn.jsdelivr.net/npm/d3-cloud@1/build/d3.layout.cloud.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vis-network@9.1.9/dist/vis-network.min.js"></script>
-  <script src="./index.js"></script>
+<header class="hero section-fade">
+<div class="hero__inner">
+<p class="kicker">데이터저널리즘 탐사보도</p>
+<h1>데이터로 파헤친 ‘가짜 후기’의 민낯</h1>
+<p class="subtitle">당신이 본 그 글, 사실은 광고였습니다</p>
+</div>
+</header>
+<main>
+<section class="article-section section-fade">
+<div class="article-body">
+<blockquote>최근에 피부가 뒤집어져서, 인터넷에서 연고 검색하고 이것저것 찾아보면서 하나 구매했거든요. 저랑 같은 고민을 가진 분들이 후기를 좋게 쓰셨길래 검증이 좀 된 제품인가 싶었는데, 발랐더니 오히려 피부에 뭐가 더 나더라고요. 후기인 척하는 광고 아닌가 싶기도 하고요.</blockquote>
+<p>대학생 A씨(22)는 피부가 뒤집어진 뒤 포털 검색창에 제품명을 넣었다. 블로그와 카페 후기가 줄줄이 떴다. “피부가 금방 진정됐다”, “꾸준히 바르니 효과를 봤다”, “저도 같은 고민이었는데 도움을 받았다”는 말이 반복됐다. 후기는 실제 소비자의 경험처럼 보였다. 댓글도 그랬다. 누군가 제품명을 물었고, 다른 이용자가 구매처를 알려줬다. A씨는 판매처로 연결되는 링크를 댓글에서 발견했고, 해당 제품을 구매했다.</p>
+<p>A씨의 상태는 나아졌을까? 결과는 오히려 역효과였다. 사용자의 후기글에서 언급한 즉각적이고 생생한 효과, 댓글에서 이어지는 경험담은 A씨에게 해당되지 않았다.</p>
+<p>A씨는 다시 후기를 열어봤다. 그제야 이상한 점이 보였다. 여러 글의 표현이 비슷했다. 댓글의 흐름도 닮아 있었다. 경험담이 나오고, 질문이 달리고, 제품 추천과 구매 링크가 이어졌다. 이상할 만큼 일관된 칭찬으로 가득한 후기들이 사실은 광고일지도 모른다는 의심이 들었다고 전했다.</p>
+</div>
+<figure class="inline-image wide-visual">
+<img alt="생성형 인공지능으로 제작한 온라인 상품 후기 이미지" src="./assets/photo_01.png"/>
+<figcaption>본 이미지는 기사의 이해를 돕기 위해 생성형 인공지능을 활용하여 제작되었습니다.</figcaption>
+</figure>
+</section>
+<section class="article-section section-fade">
+<div class="article-body">
+<h2>의약품·건강기능식품 정보에 침투하는 ‘스텔스 마케팅’</h2>
+<p>최근 의약품 및 건강기능식품 업계에는 ‘스텔스 마케팅(stealth marketing)’을 이용한 광고가 만연하다. 이는 소비자들이 광고라는 사실을 눈치채지 못하도록 자연스럽게 파고드는 홍보 전략이다. 흔히 ‘바이럴 마케팅(viral marketing)’이라는 이름으로도 불린다. 문제는 이러한 마케팅이 남용되면서 소비자가 객관적 정보와 광고를 구별하기가 점점 더 어려워진다는 점이다. 특히 의약품과 건강기능식품은 소비자의 건강에 맞닿아 있는 상품이라는 점에서 후기의 영향력이 더 크고, 잘못된 선택을 유도할 경우 위험성이 커질 수 있다.</p>
+<p>이러한 문제를 발판삼아 취재진은 다이어트, 비염, 키성장, 탈모, 피부 등 5개 주제를 중심으로 온라인 게시글과 댓글을 분석했다. 스텔스 마케팅 의심 사례 약 1만 건을 수집했고, 댓글 약 7만 건을 별도로 분석했다. 대가성 표기가 확실하지 않은 글들을 중심으로, 취재진이 자체 개발한 '스텔스 마케팅 의심 신호 지표'를 통해 각 사례의 검토 필요도를 분류했다.</p>
+<p>다만 이번 분석은 개별 글의 위법 여부를 확정하는 조사가 아니다. 실제 대가 지급 여부나 광고주 지시 여부까지 확인한 것은 아니다. 취재진이 확인한 것은 온라인 후기와 댓글에서 반복적으로 나타난 광고성 의심 패턴이다.</p>
+</div>
+</section>
+<section class="article-section section-fade">
+<div class="article-body">
+<h2>데이터로 본 후기형 광고 의심 신호</h2>
+<p>취재진은 먼저 5개 주제의 게시글과 댓글을 수집했다. 이후 13개 의심 지표를 적용해 각 사례를 ‘검토 우선’과 ‘검토 낮음’으로 분류했다. <a class="text-link" href="#criteria-section">의심지표 상세 확인하기 클릭</a></p>
+<p>13개 지표에는 광고·협찬 표시 여부, 특정 제품명 반복, 유사 표현 반복, 질문과 답변의 흐름, 구매 링크 제공, 동일 계정의 반복 등장, 계정 활동 이력 확인 가능성 등이 포함됐다.</p>
+<p>‘검토 우선’은 광고성 의심 신호가 상대적으로 많이 나타나 추가 확인이 필요한 사례를 뜻한다. ‘검토 낮음’은 의심 신호가 적게 나타난 사례다. 그러나 검토 낮음이라고 해서 반드시 정상 후기라는 뜻은 아니다.</p>
+</div>
+<div class="wide-visual visual-card">
+<div class="visual-head"><h3>기본분석</h3><p>5개 주제 통합 분석 결과</p></div>
+<div class="stat-grid" id="overall-cards"></div>
+<div class="table-wrap"><div id="metric-table"></div></div>
+<div class="table-wrap"><div id="risk-table"></div></div>
+</div>
+<div class="article-body">
+<p>분석 결과, 5개 주제 모두에서 ‘검토 우선’ 비율이 ‘검토 낮음’보다 높게 나타났다. 이는 수집된 게시글과 댓글 가운데 광고성 의심 신호를 여러 개 충족한 사례가 적지 않았다는 의미다.</p>
+<p>특히 다이어트, 탈모, 피부처럼 소비자의 고민과 제품 구매가 직접 연결되는 분야에서 후기형 표현이 반복적으로 나타났다. 게시글 본문에서는 제품 성분과 사용 경험이 강조됐다.</p>
+<p>위 게시글은 일반 소비자의 자연스러운 경험담처럼 보인다. 하지만 같은 흐름이 여러 게시글에서 반복되면 이야기는 달라진다. 단순 후기보다 조직적 홍보 활동에 가까운 정황으로 볼 수 있기 때문이다.</p>
+</div>
+<div class="wide-visual visual-card">
+<div class="visual-head"><h3>통합 댓글 워드클라우드</h3><p>5개 주제 댓글 전체의 빈도 상위 단어</p></div>
+<div class="mini-summary" id="word-summary"></div>
+<div class="word-panel">
+<div class="cloud-box" id="word-cloud"></div>
+<div class="table-wrap compact"><table><thead><tr><th>순위</th><th>단어</th><th>빈도</th></tr></thead><tbody id="word-top-table"></tbody></table></div>
+</div>
+</div>
+<div class="article-body">
+<p>댓글 약 7만 건을 통합해 분석한 결과, 여러 주제에서 ‘효과’, ‘꾸준히’, ‘후기’ 같은 단어가 반복적으로 등장했다. 이 단어들 자체가 광고를 의미하는 것은 아니다. 실제 소비자도 제품을 사용한 뒤 효과를 말할 수 있다. 꾸준히 사용했다는 표현도 자연스럽다. 후기라는 단어 역시 온라인 게시글에서 흔히 쓰인다.</p>
+<p>문제는 단어가 결합되는 방식이다. 일부 게시글과 댓글에서는 “후기를 보고 샀다”, “꾸준히 사용했다”, “효과를 봤다”는 서사가 반복됐다. 여기에 “어디 제품인가요”, “구매처 알려주세요” 같은 질문이 붙었다.</p>
+<p>취재진은 이 흐름에 주목했다. 단어 하나가 아니라, 단어와 댓글 역할이 함께 반복됐기 때문이다.</p>
+<p>워드클라우드는 전체 경향을 보여주는 도구다. 광고 여부를 판정하는 증거는 아니다. 그래서 취재진은 단어 빈도만 보지 않았다. 의미연결망, 댓글 흐름, 반복 계정, 링크 제공 여부를 함께 확인했다.</p>
+</div>
+<div class="wide-visual visual-card">
+<div class="visual-head"><h3>통합 댓글 의미연결망</h3><p>단어 동시출현 관계</p></div>
+<div class="controls">
+<label>단어 수 <input id="all-node-count" max="80" min="5" step="1" type="range" value="25"/> <output id="all-node-count-out">25</output></label>
+<label>최소 동시출현 <input id="all-min-edge" max="100" min="2" step="1" type="range" value="2"/> <output id="all-min-edge-out">2</output></label>
+</div>
+<div class="mini-summary" id="network-summary"></div>
+<div class="network-box" id="all-network"></div>
+</div>
+<div class="article-body">
+<p>의미연결망 분석에서는 단어들이 어떤 관계로 함께 등장하는지 볼 수 있다. 전체 댓글 데이터에서 ‘어떤’과 ‘있을까요’처럼 질문형 표현의 연결이 두드러졌다.</p>
+<p>질문은 후기형 광고에서 중요한 역할을 한다. 게시글 작성자가 제품을 직접 권하지 않아도, 댓글에서 누군가 질문을 던지면 제품 정보가 자연스럽게 등장할 수 있다.</p>
+<p>예를 들어 한 이용자가 “어떤 제품인가요?”라고 묻는다. 다른 이용자는 “저도 써봤는데 괜찮았다”며 제품명을 말한다. 이는 자연스러운 소비자 간 정보 교환 활동이다.</p>
+<p>그러나 이 흐름이 여러 게시글에서 반복되면 댓글 알바식 문법을 의심할 수 있다. 질문자, 답변자, 호응자가 역할을 나눠 제품을 노출하는 방식과 닮아 있기 때문이다.</p>
+<p>취재진은 이를 ‘경험담 → 질문 → 추천 → 링크’ 구조로 정리했다. 이 구조는 이후 직접 검토한 의심 사례 50건의 게시글에서 더 뚜렷하게 확인됐다.</p>
+</div>
+</section>
+<section class="article-section section-fade">
+<div class="article-body">
+<h2>댓글이 가장 많았던 분야는 ‘탈모’</h2>
+<p>5개 주제 가운데 댓글 수가 가장 많았던 분야는 탈모였다. 탈모 관련 댓글은 18,579건이었다.</p>
+<p>탈모는 장기 관리가 필요한 문제다. 소비자의 불안도 크다. 의학적 치료제, 두피 관리 제품, 건강기능식품, 화장품성 제품이 한꺼번에 검색된다. 소비자는 어떤 제품이 치료제이고, 어떤 제품이 보조 제품인지 구별하기 어렵다.</p>
+<p>이런 분야에서는 후기가 더 강한 영향을 갖는다. “나도 빠지던 머리가 줄었다”, “두피가 좋아졌다”, “꾸준히 쓰면 효과가 있다”는 경험담은 공식 정보보다 더 설득력 있게 느껴질 수 있다. 취재진은 '탈모' 사례에 집중했다.</p>
+<h2>‘검토 우선’ 댓글은 제품 경험담에 집중됐다</h2>
+<p>탈모 관련 댓글을 ‘검토 우선’과 ‘검토 낮음’으로 나눠 살펴봤다. 검토 우선 항목에서는 ‘두피’, ‘정보’, ‘제품’, ‘관리’, ‘앰플’, ‘효과’ 같은 단어가 자주 나타났다.</p>
+<p>이 단어들은 제품 사용 경험과 관리 권유에 가깝다. 댓글은 질환 자체보다 특정 제품군과 사용 경험을 중심으로 움직였다.</p>
+<p>반면 검토 낮음 항목에서는 ‘부작용’, ‘약국’, ‘복용’, ‘병원’, ‘가격’, ‘처방’ 같은 단어가 상대적으로 많이 나타났다. 이 단어들은 의료적·실용적 정보 교환에 가깝다.</p>
+<p>이 차이는 중요하다. 검토 우선 댓글에서는 탈모 문제를 치료 정보보다 제품 경험담과 관리법으로 풀어가는 흐름이 강했다. 반대로 검토 낮음 댓글에서는 약국, 병원, 처방처럼 의료 체계와 연결된 단어가 더 많이 보였다.</p>
+<p>그러나 여기서도 단정은 금물이다. ‘앰플’이라는 단어가 나왔다고 광고라고 볼 수는 없다. ‘병원’이라는 단어가 나왔다고 정상 후기라고 볼 수도 없다. 핵심은 단어가 아니라 맥락이다. 제품 칭찬, 질문, 링크, 반복 계정이 함께 나타날 때 의심 신호가 강해진다.</p>
+</div>
+<div class="wide-visual visual-card">
+<div class="visual-head"><h3>탈모 댓글 상위 10단어</h3><p>‘탈모’ 키워드를 제외한 상위 10개 단어 비교</p></div>
+<div class="chart-grid" id="hair-bar-grid"></div>
+</div>
+</section>
+<section class="article-section section-fade">
+<div class="article-body">
+<h2>치료 정보보다 제품 권유가 강했던 댓글망</h2>
+<p>탈모 분야 의미연결망에서도 차이가 나타났다.</p>
+<p>검토 우선 항목에서는 ‘관리-두피’, ‘앰플-탈모’, ‘두피-앰플’, ‘관리-탈모’, ‘제품-탈모’의 연결이 두드러졌다. 댓글 반응이 치료 정보보다 제품 사용과 관리 권유 쪽으로 조직되는 경향을 보였다.</p>
+<p>검토 낮음 항목에서는 ‘미녹시딜-탈모’, ‘미녹시딜-효과’, ‘탈모-정보’, ‘탈모-효과’ 등의 연결이 나타났다. 미녹시딜은 탈모 치료제 성분으로 알려져 있다. 이 댓글들은 상대적으로 의료적 정보 교환의 성격을 띠었다.</p>
+<p>다만 의학적으로 알려진 성분명의 언급 유무로 광고성 게시글을 의심할 수 없다. 광고성 글도 실제 후기도 성분명을 활용할 수 있다. 반대로 두피 앰플이나 관리 제품을 언급했다고 해서 모두 광고라고 단정할 수도 없다.</p>
+<p>취재진이 주목한 것은 특정 단어 하나가 아니다. 제품 권유형 표현, 댓글 흐름, 구매 링크 제공, 반복 계정이 함께 나타나는 구조다.</p>
+</div>
+<div class="wide-visual visual-card">
+<div class="visual-head"><h3>탈모 댓글 의미연결망</h3><p>검토분류별 동시출현 구조</p></div>
+<div class="controls">
+<label>표시 단어 수 <input id="hair-node-count" max="28" min="8" type="range" value="15"/> <output id="hair-node-out">15</output></label>
+<label>최소 동시출현 <input id="hair-edge-count" max="20" min="2" type="range" value="10"/> <output id="hair-edge-out">10</output></label>
+</div>
+<div class="chart-grid" id="hair-network-grid"></div>
+</div>
+</section>
+<section class="article-section section-fade">
+<div class="article-body">
+<h2>‘입소문’은 상품이었다…대행사가 설계한 바이럴 마케팅의 공장</h2>
+<p>취재진은 댓글 알바 의심 구조가 실제 바이럴 마케팅 시장에서 어떤 방식으로 상품화되고 있는지 확인했다. 온라인에서 어렵지 않게 바이럴 마케팅 대행 업무를 공개적으로 홍보하는 여러 업체를 찾을 수 있었다. 이 가운데 장기간 운영 이력과 대규모 대행 실적을 내세운 주요 업체 두 곳의 공개 서비스 소개 자료를 살펴봤다.</p>
+</div>
+<figure class="wide-image wide-visual agency-image"><img alt="바이럴 마케팅 대행사 웹 페이지 화면" src="./assets/photo_09.png"/><figcaption>실제 바이럴 마케팅 대행사 웹 페이지 화면 중</figcaption></figure>
+<div class="article-body">
+<p>한 바이럴 마케팅 대행사는 자사 서비스 유형을 ‘Q&amp;A형’, ‘후기형’, ‘핫딜형’, ‘정보배포형’으로 나눠 설명하고 있었다. 업체는 Q&amp;A형에 대해 “질문형 게시글과 답변형 댓글을 통해 자연스러운 효과를 유도하는 방식”이라고 소개했다. 후기형은 후기 내용과 사진을 함께 사용해 게시하는 방식, 핫딜형은 URL과 이미지를 활용해 상품 정보를 함께 삽입하는 방식으로 설명됐다. 정보배포형은 각종 신상품 정보를 활용해 문서 배포를 유도하는 방식으로 제시됐다.</p>
+</div>
+<figure class="wide-image wide-visual agency-image"><img alt="바이럴 마케팅 대행사 서비스 소개 화면" src="./assets/photo_10.png"/><figcaption>실제 바이럴 마케팅 대행사 웹 페이지 화면 중</figcaption></figure>
+<div class="article-body">
+<p>다른 대행사 자료에서도 비슷한 단서가 확인됐다. 해당 업체는 ‘맞춤형 원고 작성’, ‘브랜드 및 시장 조사’, ‘브랜드 연계 사진 콘텐츠 구성’, ‘30일 관리’, ‘데일리 모니터링’, ‘게시글·고객 소통·쪽지 관리’ 등을 서비스 항목으로 내세웠다. 단순히 게시글을 작성하는 데 그치지 않고, 게시 이후의 반응과 소통까지 관리 대상으로 삼고 있는 것이다.</p>
+<p>이 대목은 댓글 공간이 단순한 소비자 반응만으로 구성되지 않을 수 있음을 보여준다. 소비자가 보기에는 자연스러운 질문과 답변처럼 보이지만, 대행 시장에서는 질문형 게시글, 후기형 콘텐츠, 댓글 관리, 링크 삽입이 하나의 마케팅 상품으로 묶여 판매되고 있었다.</p>
+<p>이 자료들이 보여주는 것은 바이럴 마케팅이 더 이상 몇몇 계정의 산발적 홍보에 그치지 않는다는 점이다. 질문형 게시글, 후기형 콘텐츠, 핫딜 링크, 댓글 관리, 30일 모니터링은 각각 별개의 활동이 아니라 대행사가 판매하는 서비스 항목으로 분류돼 있었다. 소비자가 마주한 하나의 후기와 댓글은 자발적 입소문처럼 보이지만, 실제로는 기업 주도적 마케팅의 일부일 수 있다.</p>
+<p>취재진은 해당 업체의 온라인 사이트에서 광고주 지침을 포함한 일종의 '바이럴 마케팅 대행사 가이드라인'을 어렵지 않게 입수할 수 있었다. 이를 정리하여 50건의 의심 사례 기반 심층 분석에 교차 검증 기준으로 활용했다.</p>
+</div>
+</section>
+<section class="article-section section-fade">
+<div class="article-body">
+<h2>경험담인 줄 알았지만… 숨겨진 구매 유도 흔적을 발견</h2>
+<p>취재진은 13개 의심 지표 가운데 다수를 충족한 게시글 50건을 별도로 골랐다. 이후 바이럴 마케팅 대행사 가이드라인과 함께 본문과 댓글 전체를 직접 검토했다.</p>
+<p>공통적으로 특정 제품의 장점을 강조하거나 제품 성분에 대한 긴 설명이 반복됐다. 특히, 다른 제품 또는 타사의 유사 상품과 비교하는 표현이 눈에 띄었다.</p>
+<p>더 눈에 띈 것은 댓글이었다. 일부 댓글은 일정한 순서로 흘러갔다.</p>
+</div>
+<figure class="wide-image wide-visual compact-image"><img alt="댓글 속 구매 유도 링크 사례" src="./assets/photo_02.png"/><figcaption>의심 사례 게시글에서 확인된 댓글 흐름. 개인정보, 상품명, URL은 비식별 처리 필요.</figcaption></figure>
+<div class="article-body">
+<p>첫째, 작성자나 댓글 이용자가 제품 사용 경험을 공유했다. 둘째, 다른 이용자가 제품명이나 구매처를 물었다. 셋째, 또 다른 이용자가 제품을 칭찬하거나 구매 링크를 제공했다.</p>
+</div>
+<figure class="wide-image wide-visual compact-image"><img alt="댓글 속 구매 유도 링크 추가 사례" src="./assets/photo_03.png"/><figcaption>50건 게시글 중 댓글 흐름이 부자연스러운 사례</figcaption></figure>
+<div class="article-body">
+<p>겉으로는 자연스러운 대화처럼 보였다. 하지만 같은 흐름이 여러 게시글에서 반복됐다. 이는 댓글 알바식 홍보 전략으로 의심할 수 있는 대목이다.</p>
+<p>소비자는 직접 정보를 찾아낸다고 느낀다. 하지만 실제로는 질문과 답변을 따라가다 구매 페이지에 도착한다. 광고는 보이지 않는다. 대신 경험담과 댓글이 소비자를 움직인다.</p>
+<h2>같은 계정이 질문자와 답변자로 번갈아 등장했다</h2>
+<p>취재진은 직접 검토한 게시글 일부에서 동일하거나 유사한 계정이 반복적으로 등장하는 정황을 포착했다.</p>
+</div>
+<figure class="wide-image wide-visual compact-image"><img alt="반복 계정 댓글 사례" src="./assets/photo_04.png"/></figure>
+<div class="article-body">
+<p>한 게시글에서는 구매 링크를 제공하던 계정이 다른 게시글에서는 제품을 묻는 질문자로 등장했다. 반대로 질문자였던 계정이 다른 게시글에서는 추천자 역할을 맡는 사례도 있었다. 취재진은 광고성 의심도가 높은 50건의 게시글 댓글 중에서 위와 같은 유사 사례를 8건 확인했다.</p>
+</div>
+<figure class="wide-image wide-visual compact-image compact-image--small"><img alt="탈퇴 계정 화면" src="./assets/photo_05.png"/><figcaption>댓글 흔적을 확인하려 했으나 계정은 이미 탈퇴한 상태였다.</figcaption></figure>
+<div class="article-body">
+<p>취재진은 해당 댓글을 게시한 작성자와 접촉하고자 상세 프로필을 조회했다. 하지만, 작성자의 실제 신원을 확인할 수 없었다. 계정은 프로필 조회가 불가능하거나 이미 탈퇴한 상태였기 때문이다.</p>
+<p>계정이 탈퇴했다는 사실만으로 증거 삭제를 단정할 수는 없다. 계정 탈퇴에는 여러 이유가 있을 수 있다. 그러나 댓글은 남아 있고 계정 정보는 사라진 상태라면, 사후 검증은 어려워진다. 플랫폼 차원의 기록 관리와 광고성 댓글 관리가 필요한 이유다.</p>
+</div>
+</section>
+<section class="article-section section-fade">
+<div class="article-body">
+<h2>업계 관계자 인터뷰, “후기 몇 건, 댓글 관리까지”…바이럴은 패키지로 팔린다</h2>
+</div>
+<figure class="wide-image wide-visual interview-image"><img alt="생성형 인공지능으로 제작한 업계 관계자 인터뷰 이미지" src="./assets/photo_07.png"/><figcaption>본 이미지는 기사의 이해를 돕기 위해 생성형 인공지능을 활용하여 제작되었습니다.</figcaption></figure>
+<div class="article-body"><p>취재진은 온라인 바이럴 마케팅 업무를 경험한 업계 관계자 B씨를 인터뷰했다. 그의 설명은 취재진이 데이터에서 확인한 댓글 흐름과 맞닿아 있었다. 바이럴 마케팅은 단순히 게시글 한두 개를 올리는 방식이 아니었다. 블로그 후기, 인스타그램 게시물, 카페 글, 숏폼 영상, 댓글 관리가 하나의 패키지처럼 묶여 움직였다.</p><p>효과는 숫자로 딱 잘라 증명하기 어렵지만, 업계가 보는 지표는 분명했다. B씨는 “대형 H&amp;B 매장 입점 직후에 바이럴을 깔아두면 검색량이 눈에 띄게 뜬다”고 말했다. 매출로 바로 연결됐는지는 추적하기 어렵지만, 검색량, 조회수, 도달, 저장 수, 리뷰 증가 속도 같은 간접 지표가 움직인다는 설명이다.</p><p>바이럴의 방식도 구체적이었다. 네이버 블로그 후기를 쌓고, 인스타그램에서는 일반인처럼 보이는 계정이 제품을 자연스럽게 소개한다. 틱톡이나 유튜브 숏폼에서는 “요즘 이거 다 쓴다더라”는 식으로 제품을 끼워 넣는다. B씨는 “블로그 후기 몇 건, 인스타 게시물 몇 건, 카페 글 몇 건 이런 식으로 패키지처럼 묶어서 온다”며 “콘텐츠 제작부터 배포, 댓글 관리까지 해주는 데도 있다”고 말했다.</p><p>이 대목은 이번 취재의 데이터 분석 결과와 연결된다. 취재진은 일부 게시글에서 경험담, 질문, 제품 추천, 구매 링크가 차례로 이어지는 댓글 흐름을 확인했다. 현업자의 설명처럼 댓글 관리가 바이럴 패키지 안에 포함될 수 있다면, 댓글 공간은 단순한 소비자 반응이 아니라 마케팅의 일부로 활용될 가능성이 있다.</p><p>주요 타깃도 분명했다. B씨는 “20대에서 30대 초반 여성이 메인”이라고 말했다. 이들이 제품을 사기 전 블로그, 유튜브, 올리브영 리뷰를 두루 확인하기 때문에 바이럴도 그 동선에 맞춰 깔린다는 설명이다. 소비자가 정보를 확인하는 경로가 곧 마케팅이 배치되는 경로가 되는 셈이다.</p><p>B씨가 말한 구별 기준은 반복성이었다. 그는 “갑자기 여기저기서 똑같은 표현으로 칭찬이 쏟아지면 의심한다”고 했다. 진짜 입소문은 사람마다 말투와 관심 포인트가 다르지만, 작업된 콘텐츠는 같은 셀링포인트를 반복한다는 것이다.</p><p>이는 취재진의 워드클라우드와 의미연결망 분석 결과와도 맞닿아 있다. 댓글 데이터에서는 ‘효과’, ‘꾸준히’, ‘후기’ 같은 표현이 여러 주제에서 반복됐다. 탈모 분야 검토 우선 댓글에서는 ‘두피’, ‘제품’, ‘관리’, ‘앰플’, ‘효과’ 같은 단어가 함께 나타났다. 단어 자체가 광고를 뜻하는 것은 아니지만, 같은 셀링포인트가 반복될 때 광고성 의심 신호는 강해진다.</p><p>문제는 이런 흐름이 관리되기 어렵다는 점이다. B씨는 댓글 작성자 닉네임이 비슷하거나 반복되는 문제에 대해 “직접 전부 사후 체크하지는 않는다”고 말했다. 대행업체와 광고주 사이에서 콘텐츠는 패키지 단위로 운영되지만, 실제 댓글 하나하나가 어떻게 관리되는지는 불투명하다. 결국 문제는 개별 후기 하나가 아니다. 후기, 검색량, 리뷰, 댓글, 링크가 하나의 흐름으로 연결되는 구조다.</p><p>이 인터뷰는 후기형 광고가 어떻게 만들어지고, 왜 비슷한 문법으로 반복되는지 보여준다. 동시에 업계가 문제를 알고도 적극적으로 통제하지 못하는 현실도 드러낸다.</p></div>
+</section>
+<section class="article-section section-fade">
+<div class="article-body">
+<h2>왜 댓글 알바식 후기는 사라지지 않나</h2>
+<p>댓글 알바식 후기가 반복되는 이유는 단순하다. 효과적이기 때문이다.</p>
+<p>소비자는 광고보다 후기를 더 신뢰한다. 특히 건강 문제에서는 자신과 비슷한 고민을 가진 사람의 경험담에 더 쉽게 반응한다. “나도 같은 증상이었다”는 문장은 제품 설명보다 강하다.</p>
+<p>업체 입장에서도 후기형 콘텐츠는 유리하다. 직접 광고보다 거부감이 적다. 검색 결과에 오래 남는다. 댓글이 붙으면 글은 더 자연스러워 보인다. 질문과 답변이 이어지면 제품 정보가 광고가 아니라 대화처럼 보인다.</p>
+<p>플랫폼 구조도 영향을 준다. 게시글 본문에는 광고 표시가 있더라도 댓글에는 표시가 없는 경우가 많다. 구매 링크가 댓글에 남겨지면 소비자는 이를 정보 공유로 받아들일 수 있다.</p>
+<p>규제의 사각지대도 있다. 광고 표시 기준은 존재하지만, 댓글형 홍보와 후기형 게시글은 실제 운영 방식이 빠르게 변한다. 제품명은 숨기고 성분명만 말하거나, 직접 구매 링크 대신 검색어를 알려주는 방식도 가능하다. 단속 기준보다 마케팅 방식이 빠르게 바뀌는 것이다.</p>
+<p>결국 문제는 개별 댓글 몇 개가 아니다. 광고가 소비자 대화의 형식을 빌려 숨어드는 구조다.</p>
+</div>
+</section>
+<section class="article-section section-fade" id="criteria-section">
+<div class="article-body">
+<h2>스텔스 마케팅 의심 신호 지표</h2>
+<p>취재진은 이번 분석에 활용한 13개 의심 지표를 소비자용 체크리스트로 정리했다.</p>
+</div>
+<div class="full-visual visual-card criteria-card">
+<div class="visual-head"><h3>스텔스 마케팅 의심 신호 지표</h3><p>13개 텍스트 분석 지표</p></div>
+<table>
+<colgroup>
+<col class="code-col"/>
+<col class="item-col"/>
+<col class="criteria-col"/>
+<col class="ref-col"/>
+<col class="reason-col"/>
+</colgroup>
+<thead>
+<tr>
+<th>번호</th>
+<th>지표항목</th>
+<th>판별 기준</th>
+<th>참조</th>
+<th>중요이유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="code"><span>C1</span></td>
+<td class="item">
+<strong>후기/체험담 형식</strong>
+<details class="examples-box">
+<summary>예시 보기</summary>
+<p>직접 써봤는데요, 솔직 후기, 체험단 리뷰</p>
+</details>
+</td>
+<td class="criteria">게시글이 실제 소비자 경험담처럼 구성되는지 확인합니다.</td>
+<td class="ref">신상무 외 (2016), 복식문화연구</td>
+<td class="reason">소비자 후기 형식은 신뢰도를 높이고 광고임을 인식하기 어렵게 만들어 설득 효과를 극대화함.</td>
+</tr>
+<tr>
+<td class="code"><span>C2</span></td>
+<td class="item">
+<strong>SNS 공유 유도 표현</strong>
+<details class="examples-box">
+<summary>예시 보기</summary>
+<p>저장 필수, 공유해 주세요, 태그 이벤트, 주변에 알려주세요</p>
+</details>
+</td>
+<td class="criteria">저장·공유·태그 등 확산 행동을 유도하는 표현이 있는지 확인합니다.</td>
+<td class="ref">이동대·최미리 (2020), 소비문화연구</td>
+<td class="reason">자발적 공유 유도는 바이럴의 본질임. 플로우와 팔로워십을 자극해 재전파 의도를 높임.</td>
+</tr>
+<tr>
+<td class="code"><span>C3</span></td>
+<td class="item">
+<strong>소비자 추천 표현</strong>
+<details class="examples-box">
+<summary>예시 보기</summary>
+<p>강추, 이거 진짜 좋음, 안 사면 후회해요, 주변에도 알려줬어요</p>
+</details>
+</td>
+<td class="criteria">소비자의 자발적 추천처럼 보이는 표현이 있는지 확인합니다.</td>
+<td class="ref">신상무 외 (2016), 손봉현 (2020)</td>
+<td class="reason">개인 추천처럼 보이면 설득지식 활성화가 억제되고 소비자 신뢰도가 높아질 수 있음.</td>
+</tr>
+<tr>
+<td class="code"><span>C4</span></td>
+<td class="item">
+<strong>숨겨진 브랜드 홍보 의도</strong>
+<details class="examples-box">
+<summary>예시 보기</summary>
+<p>브랜드명 간접 언급, 정보성 글 안에 제품 링크나 할인코드 삽입</p>
+</details>
+</td>
+<td class="criteria">브랜드명, 제품 링크, 할인코드 등이 정보 제공 형식 안에 자연스럽게 삽입되는지 확인합니다.</td>
+<td class="ref">KCI ART002347744 (2018), 광고PR실학연구</td>
+<td class="reason">광고와 정보의 구분이 모호해지면 설득지식을 우회할 수 있음. 소비자가 광고로 인식하지 못할수록 설득 효과가 커질 수 있음.</td>
+</tr>
+<tr>
+<td class="code"><span>C5</span></td>
+<td class="item">
+<strong>감정적 호소 표현</strong>
+<details class="examples-box">
+<summary>예시 보기</summary>
+<p>눈물남, 완전 공감, 나만 알기 아까워서, 써보고 소름 돋았음</p>
+</details>
+</td>
+<td class="criteria">공감·놀람·감동 등 감정 반응을 통해 제품 호감을 만드는 표현이 있는지 확인합니다.</td>
+<td class="ref">이동대·최미리 (2020), 소비문화연구</td>
+<td class="reason">감정 유발이 강할수록 몰입도와 공유 의도가 높아질 수 있음. 바이럴 확산의 핵심 심리 동인임.</td>
+</tr>
+<tr>
+<td class="code"><span>C6</span></td>
+<td class="item">
+<strong>참여·이벤트형 구조</strong>
+<details class="examples-box">
+<summary>예시 보기</summary>
+<p>챌린지, 인증샷 이벤트, 리그램하면 추첨, 댓글 참여 유도</p>
+</details>
+</td>
+<td class="criteria">댓글, 인증, 공유 등 독자 참여를 요구하거나 유도하는 구조가 포함되어 있는지 확인합니다.</td>
+<td class="ref">이동대·최미리 (2020), 소비문화연구</td>
+<td class="reason">소비자를 콘텐츠 확산자로 만드는 바이럴 메커니즘임. 팔로워십과 커뮤니티 소속감을 활용함.</td>
+</tr>
+<tr>
+<td class="code"><span>C7</span></td>
+<td class="item">
+<strong>협찬/광고비 수수 사실 불분명</strong>
+<details class="examples-box">
+<summary>예시 보기</summary>
+<p>#협찬, #광고 없이 제품 소개</p>
+</details>
+</td>
+<td class="criteria">제품 소개가 있으나 경제적 이해관계 표시가 명확하지 않은지 확인합니다.</td>
+<td class="ref">조재영 (2021), 차세대융합기술학회논문지</td>
+<td class="reason">공정거래위원회 기만광고 심결의 핵심 기준임. 경제적 이해관계 미표시는 표시광고법 위반 소지가 있음.</td>
+</tr>
+<tr>
+<td class="code"><span>C8</span></td>
+<td class="item">
+<strong>인플루언서/파워블로거 형식</strong>
+<details class="examples-box">
+<summary>예시 보기</summary>
+<p>팔로워 수 강조, 전문가 포지셔닝, 정기적 제품 소개 콘텐츠</p>
+</details>
+</td>
+<td class="criteria">작성자가 영향력, 전문성, 정기 리뷰 형식을 통해 신뢰를 구성하는지 확인합니다.</td>
+<td class="ref">신상무 외 (2016), 손봉현 (2020)</td>
+<td class="reason">인플루언서의 신뢰성과 친밀감은 소비자 설득의 핵심 경로임. 광고 회피 심리를 낮추는 효과가 있을 수 있음.</td>
+</tr>
+<tr>
+<td class="code"><span>C9</span></td>
+<td class="item">
+<strong>일방적 긍정 표현 반복</strong>
+<details class="examples-box">
+<summary>예시 보기</summary>
+<p>단점 언급 없이 극찬 반복, 완벽해요, 단점을 모르겠어요</p>
+</details>
+</td>
+<td class="criteria">단점이나 한계 없이 장점과 극찬이 반복되는지 확인합니다.</td>
+<td class="ref">신상무 외 (2016), 김인규·차성수 (2020)</td>
+<td class="reason">지나치게 긍정적인 텍스트는 기획 콘텐츠 가능성을 시사함. 자발적 후기와 구분하는 언어적 지표가 될 수 있음.</td>
+</tr>
+<tr>
+<td class="code"><span>C10</span></td>
+<td class="item">
+<strong>타 업체 비교 우월성 강조</strong>
+<details class="examples-box">
+<summary>예시 보기</summary>
+<p>예전에 쓰던 다른 곳들은 다 문제가 많았는데 여기는 다르다, 타사의 단점을 구체적으로 지적하며 현재 업체의 장점을 부각하는 구조</p>
+</details>
+</td>
+<td class="criteria">타 제품·업체를 낮추고 현재 제품이나 업체의 우월성을 부각하는 구조가 있는지 확인합니다.</td>
+<td class="ref">COLING 2020: 커뮤니티 내 과도한 칭찬 글이 먹튀 유도에 사용되는 패턴 분석, 조작된 칭찬 글의 특징적 패턴</td>
+<td class="reason">비교 대상을 설정해 해당 업체가 더 안전하고 합리적인 선택지라는 착시와 논리적 인상을 심어 신뢰를 유도할 수 있음.</td>
+</tr>
+<tr>
+<td class="code"><span>C11</span></td>
+<td class="item">
+<strong>부자연스러운 마케팅 언어</strong>
+<details class="examples-box">
+<summary>예시 보기</summary>
+<p>최고의 서비스, 완벽한 시스템 같은 정제되고 단정적인 마케팅 단어 남발, 오탈자나 자연스러운 실수가 없는 완벽한 문장, 실제 경험에서 나오는 구체적 디테일의 결여</p>
+</details>
+</td>
+<td class="criteria">정제되고 단정적인 마케팅 단어가 빈번하거나 실제 경험에서 나오는 구체적 디테일이 부족한지 확인합니다.</td>
+<td class="ref">COLING 2020: 커뮤니티 내 과도한 칭찬 글이 먹튀 유도에 사용되는 패턴 분석, 언어 사용의 부자연스러움</td>
+<td class="reason">일반 소비자의 자발적 후기에서 나타나기 어려운 특징으로, 사전에 기획·가공된 홍보용 스크립트일 가능성을 시사하는 언어적 지표임.</td>
+</tr>
+<tr>
+<td class="code"><span>C12</span></td>
+<td class="item">
+<strong>객관적 근거 없는 허위·과장</strong>
+<details class="examples-box">
+<summary>예시 보기</summary>
+<p>100% 효과 보장, 부작용 전혀 없음 등 객관적 검증이 불가능한 단정적 표현, 자발적 리뷰를 가장하여 효능을 부풀린 확정적 문구</p>
+</details>
+</td>
+<td class="criteria">검증하기 어려운 단정 표현이나 효능 과장 표현이 있는지 확인합니다.</td>
+<td class="ref">고준용 변호사, 「인플루언서 뒷광고 법적 책임, 계약 전 반드시 확인할 7가지」(2026.04.16); 표시광고법 제3조 제1항 제1호 거짓·과장의 표시·광고 금지</td>
+<td class="reason">광고·협찬 고지를 명확히 했더라도 내용 자체가 허위·과장일 경우 별도의 기만행위가 될 수 있음. 특히 제품 효능 과장은 소비자의 합리적 의사결정을 방해하는 핵심 요소임.</td>
+</tr>
+<tr>
+<td class="code"><span>C13</span></td>
+<td class="item">
+<strong>조건부 표현으로 대가성 흐림</strong>
+<details class="examples-box">
+<summary>예시 보기</summary>
+<p>일정 수수료를 지급받을 수 있음, 판매에 따라 커미션이 발생할 수도 있음</p>
+</details>
+</td>
+<td class="criteria">대가 수수 여부를 확정하지 않고 조건부·불확정 표현으로 흐리는지 확인합니다.</td>
+<td class="ref">추천·보증 등에 관한 표시·광고 심사지침 [시행 2024.12.1.] [공정거래위원회예규 제473호, 2024.11.13. 일부개정]</td>
+<td class="reason">조건부·불확정 표현은 소비자에게 '광고가 아닐 수도 있다'는 오인을 유발할 수 있음. 경제적 이해관계를 명확하고 단정적으로 표시해야 한다는 공정위 지침을 우회하는 방식임.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="article-body">
+<p>이 체크리스트는 광고 여부를 판정하는 도구가 아니다. 몇 개 항목에 해당한다고 해서 반드시 댓글 알바나 광고라고 볼 수는 없다. 해당하지 않는다고 해서 안전한 후기라고 단정할 수도 없다.</p>
+<p>그러나 소비자가 후기를 비판적으로 읽기 위한 최소한의 기준은 될 수 있다. 소비자는 이 의심 지표를 함께 본다면, 숨겨진 마케팅에 속지 않고 보다 현명한 선택을 할 수 있을 것이다.</p>
+</div>
+</section>
+<section class="article-section section-fade">
+<div class="article-body">
+<h2>소비자는 무엇을 확인해야 하나</h2>
+<p>후기형 광고를 완벽하게 걸러내기는 어렵다. 그래도 몇 가지 신호를 확인하면 위험을 줄일 수 있다.</p>
+<p>첫째, 광고·협찬·제품 제공 표시가 있는지 봐야 한다. 표시가 너무 작거나, 글 끝에만 있거나, 댓글에만 구매 링크가 있다면 주의해야 한다.</p>
+<p>둘째, 댓글 흐름을 봐야 한다. 경험담 뒤에 질문이 달리고, 곧바로 제품명이나 구매 링크가 제공된다면 의심해볼 필요가 있다.</p>
+<p>셋째, 여러 게시글을 검토해야 한다. 해당 제품 후기를 다룬 게시글들이 비슷한 말투로 질문하거나 추천한다면 댓글 알바 의심 신호일 수 있다. 스텔스 마케팅은 단독으로 있을 때 실제 후기처럼 보이지만, 여러 게시글과 댓글을 검토할 때 의심 정황은 뚜렷해진다. 취재진은 앞서 이러한 연결고리를 확인한 바 있다.</p>
+<p>넷째, 건강기능식품과 식품 관련 제품은 공식 정보를 먼저 확인해야 한다. 식품안전나라 건강기능식품 검색에서는 품목신고 제품 정보를 조회할 수 있다. 후기보다 공적 정보 확인이 먼저다.</p>
+</div>
+<figure class="wide-image wide-visual"><img alt="식품안전나라 화면" src="./assets/photo_06.png"/><figcaption>식품안전나라 제품 정보 확인 화면. 식품안전나라 누리집(https://www.foodsafetykorea.go.kr/main.do)</figcaption></figure>
+<figure class="wide-image wide-visual mfds-image"><img alt="온라인 광고 주의 안내" src="./assets/photo_08.png"/><figcaption>식품의약품안전처 제공</figcaption></figure>
+<div class="article-body">
+<p>또한, 식약처는 소비자에게 온라인상에서 식약처로부터 기능성을 인정받은 건강기능식품 제품을 구매하고자 하는 경우 제품에 표시된 ‘건강기능식품 인증마크’를 확인하고 구매할 것을 당부한 바 있다. 기만적 마케팅을 구별하기 위한 소비자의 확인 절차가 필요한 시점이다.</p>
+</div>
+</section>
+<section class="article-section section-fade">
+<div class="article-body">
+<h2>대책은 소비자 조심만으로 끝나서는 안 된다</h2>
+<p>소비자가 조심하는 것만으로는 부족하다. 후기형 광고는 개인의 판단력을 넘어서는 방식으로 설계된다. 경험담, 질문, 링크가 이어지는 구조는 광고를 광고처럼 보이지 않게 만든다.</p>
+<p>플랫폼은 반복 계정과 구매 링크 댓글을 더 적극적으로 관리해야 한다. 특정 제품군 게시글마다 같은 계정이 비슷한 댓글을 남기는지, 질문자와 추천자 역할이 반복되는지 감지할 필요가 있다.</p>
+<p>광고 업계도 경제적 이해관계를 숨기지 않아야 한다. 제품을 제공받았거나 대가를 받았다면 소비자가 쉽게 알아볼 수 있게 표시해야 한다. 댓글을 통한 홍보 역시 예외가 되어서는 안 된다.</p>
+<p>규제기관은 건강 관련 후기형 광고를 더 세밀하게 들여다봐야 한다. 특히 치료 효과를 암시하는 표현, 댓글을 통한 구매 유도, 광고 표시 없는 링크 제공은 소비자 오인을 부를 수 있다.</p>
+<p>이번 취재가 확인한 것은 하나의 제품이나 하나의 계정이 아니다. 온라인 후기 생태계 안에서 광고와 경험담의 경계가 흐려지고 있다는 사실이다.</p>
+<p>후기는 소비자의 경험이어야 한다. 광고라면 광고라고 말해야 한다. 그 단순한 원칙이 지켜지지 않을 때, 평범한 댓글 하나도 소비자를 구매로 이끄는 숨은 통로가 될 수 있다.</p>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<p>데이터저널리즘 프로젝트 웹페이지</p>
+<div aria-label="기자 명단" class="reporters">
+<strong>취재·분석</strong>
+<span>김태린 기자 xofls0929@khu.ac.kr</span>
+<span>남혜정 기자 ncw3463@khu.ac.kr</span>
+<span>박찬규 기자 ppck75@khu.ac.kr</span>
+<span>이민형 기자 minhyeongi@khu.ac.kr</span>
+<span>TSANG CHEUK LING 기자 charon372c@khu.ac.kr</span>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-cloud@1/build/d3.layout.cloud.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vis-network@9.1.9/dist/vis-network.min.js"></script>
+<script src="./index.js"></script>
 </body>
 </html>
