@@ -196,7 +196,7 @@ function renderHairSemanticNetworks() {
     const s = data.summary[label] || {};
     const section = document.createElement("section");
     section.className = "chart-card";
-    section.innerHTML = `<h4 style="color:${chartColor(label)}">${label}</h4><p class="meta">댓글 ${Number(s.comment_count || 0).toLocaleString()}개 · 노드 크기=단어 빈도, 선 굵기=동시출현 빈도</p><div id="hair-network-${cssId(label)}" class="topic-network"></div>`;
+    section.innerHTML = `<h4 style="color:${chartColor(label)}">${label}</h4><p class="meta">댓글 ${Number(s.comment_count || 0).toLocaleString()}개</p><div id="hair-network-${cssId(label)}" class="topic-network"></div>`;
     grid.appendChild(section);
   });
   document.getElementById("hair-node-count").addEventListener("input", renderHairNetworksOnly);

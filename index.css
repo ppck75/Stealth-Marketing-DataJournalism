@@ -209,6 +209,35 @@ blockquote::after {
   border-radius: 8px;
   background: #fff;
 }
+.analysis-toggle {
+  margin-top: 16px;
+}
+.analysis-toggle summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--accent-weak);
+  color: #075985;
+  padding: 9px 14px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.analysis-toggle summary::before {
+  content: "▸";
+  font-size: 13px;
+}
+.analysis-toggle[open] summary::before {
+  content: "▾";
+}
+.analysis-toggle .table-wrap {
+  margin-top: 12px;
+}
 table {
   width: 100%;
   border-collapse: collapse;
