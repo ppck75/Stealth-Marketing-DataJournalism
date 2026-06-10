@@ -76,6 +76,15 @@ figcaption {
   font-size: 14px;
   line-height: 1.6;
 }
+.visual-caption {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+.basic-analysis-caption + .analysis-toggle {
+  margin-top: 12px;
+}
 .article-section {
   padding: 0 20px;
 }
@@ -299,11 +308,13 @@ th { background: #eef7ff; color: #1f2937; font-weight: 800; }
 .network-box,
 .topic-network {
   width: 100%;
-  min-height: 560px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #ffffff;
 }
+.cloud-box { min-height: 390px; }
+.network-box,
+.topic-network { min-height: 560px; }
 .network-box { height: 680px; }
 .chart-grid {
   display: grid;
@@ -382,8 +393,16 @@ th { background: #eef7ff; color: #1f2937; font-weight: 800; }
 .mfds-image img {
   margin: 0 auto;
 }
+.food-safety-image {
+  width: min(100%, 900px);
+  margin-top: 30px;
+  margin-bottom: 34px;
+}
+.food-safety-image img {
+  margin: 0 auto;
+}
 .agency-image {
-  width: min(100%, 760px);
+  width: min(100%, 700px);
   margin-top: 30px;
   margin-bottom: 34px;
 }
@@ -449,6 +468,12 @@ th { background: #eef7ff; color: #1f2937; font-weight: 800; }
 .criteria-card col.criteria-col { width: 25%; }
 .criteria-card col.ref-col { width: 25%; }
 .criteria-card thead th { position: static; background: #eef7ff; }
+.criteria-card th {
+  text-align: left;
+  white-space: normal;
+  overflow-wrap: keep-all;
+  word-break: keep-all;
+}
 .criteria-card tbody td { text-align: left; font-family: "Noto Sans KR", sans-serif; }
 .criteria-card .code span {
   display: inline;
@@ -473,6 +498,52 @@ th { background: #eef7ff; color: #1f2937; font-weight: 800; }
   line-height: 1.55;
   font-weight: 400;
   color: #333333;
+}
+.appendix-section {
+  border-top: 1px solid var(--line);
+  padding-top: 64px;
+}
+.appendix-section .article-body {
+  text-align: center;
+}
+.appendix-section h2 {
+  font-size: clamp(22px, 2vw, 28px);
+  line-height: 1.35;
+}
+.appendix-section h2::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+.criteria-card--appendix {
+  width: min(100%, 1120px);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 22px;
+}
+.criteria-card--appendix table {
+  min-width: 1040px;
+}
+.criteria-card--appendix col.code-col {
+  width: 68px;
+}
+.criteria-card--appendix col.item-col {
+  width: 190px;
+}
+.criteria-card--appendix .visual-head {
+  justify-content: center;
+  text-align: center;
+}
+.criteria-card--appendix .visual-head h3 {
+  font-size: 20px;
+}
+.criteria-card--appendix .criteria-toggle {
+  text-align: center;
+}
+.criteria-card--appendix .table-wrap {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
 }
 @media (max-width: 900px) {
   .hero { min-height: auto; padding: 54px 18px 44px; }

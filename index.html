@@ -46,9 +46,10 @@
         <p>다만, 검토 우선으로 분류된 글은 스텔스 마케팅 사례로 확정되는 것이 아니다. 이 지표는 광고성 의심의 패턴을 파악하고, 의심도가 높은 사례를 뽑아 심층 취재하기 위해 만들었다.</p>
       </div>
       <div class="wide-visual visual-card">
-      <div class="visual-head"><h3>기본분석</h3><p>5개 주제 통합 분석 결과</p></div>
+      <div class="visual-head"><h3>기본분석</h3></div>
       <div class="stat-grid" id="overall-cards"></div>
       <div class="pie-chart" id="overall-pie"></div>
+      <p class="visual-caption basic-analysis-caption">전체 게시글 통합 분석 결과</p>
       <details class="analysis-toggle">
       <summary>상세 분석 보기</summary>
       <div class="detail-table-group">
@@ -74,7 +75,7 @@
       <div class="wide-visual visual-card">
       <div class="visual-head"><h3>통합 댓글 워드클라우드</h3></div>
       <div class="cloud-box" id="word-cloud"></div>
-      <figcaption>핵심 키워드 탈모, 다이어트, 피부, 키성장, 비염을 제외하고 댓글에서 자주 등장한 단어를 집계한 워드클라우드.</figcaption>
+      <figcaption>핵심 키워드 탈모, 다이어트, 피부, 키성장, 비염을 제외하고 댓글에서 자주 등장한 단어를 집계한 워드클라우드</figcaption>
       </div>
       <div class="article-body">
         <p>댓글은 어떨까? 댓글 키워드를 분석하니 ‘효과’, ‘꾸준히’, ‘후기’, '정보'가 가장 많이 언급됐다. 댓글의 상당수가 제품의 후기와 정보 공유성 내용임을 알 수 있다.</p>
@@ -84,7 +85,7 @@
       <div class="visual-head"><h3>댓글 상위 10단어: 검토 우선 vs 검토 낮음</h3></div>
       <div class="chart-grid" id="overall-risk-bar-grid"></div>
       <div id="overall-risk-bar-tooltip" class="tooltip"></div>
-      <figcaption>검토 우선 게시글 댓글과 검토 낮음 게시글 댓글에서 자주 등장한 단어 10개를 비교한 그래프.</figcaption>
+      <figcaption>검토 우선 게시글 댓글과 검토 낮음 게시글 댓글에서 자주 등장한 단어 10개를 비교한 그래프</figcaption>
       </div>
       <div class="article-body">
         <p>각 분류별 댓글 상위 10단어를 살펴보니 '검토 우선 댓글'에는  '후기', '제품','도움'처럼 정보 제공형 단어가 두드러졌다. 반면, 검토 낮음 댓글에는 '꾸준히', '먹다','효과'처럼 사용 경험형 단어가 두드러졌다. '프로폴리스','미녹시딜' 같은 성분이 직접 언급되기도 하였다.</p>
@@ -97,26 +98,26 @@
       <label>최소 동시출현 <input id="overall-risk-edge-count" max="20" min="5" type="range" value="10"/> <output id="overall-risk-edge-out">10</output></label>
       </div>
       <div class="chart-grid" id="overall-risk-network-grid"></div>
-      <figcaption>검토 우선 댓글과 검토 낮음 댓글에서 단어가 함께 등장한 관계를 비교한 의미연결망. 기본값은 표시 단어 수 6개, 최소 동시출현 10회다.</figcaption>
+      <figcaption>검토 우선 댓글과 검토 낮음 댓글에서 단어가 함께 등장한 관계를 비교한 의미연결망(기본값: 표시 단어 수 6개, 최소 동시출현 10개 / 설정 바꾸어 확인 가능)</figcaption>
       </div>
       <div class="article-body">
-        <p>'검토 우선 댓글'은 가장 많이 등장한 '정보'를 중심으로 '후기 - 효과 - 도움'의 연결이 두드러졌다. ‘후기’, ‘효과’, ‘도움’은 단순히 자주 나온 단어에 그치지 않았다. 세 단어는 함께 묶여 반복되는 표현이었다. '검토 낮음 댓글'에서 '효과-꾸준히-먹다' 역시 동시에 출현했다.</p>
-        <p>이처럼 의심 분류에 따라 댓글의 동시 출현 구조가 다르게 나타났다. 하지만, 이 분석 하나만으로 ‘제품을 설득하는 댓글’과 ‘경험을 말하는 댓글'의 차이로 해석하기에는 무리가 있다.</p>
+        <p>의심 정황이 짙은 '검토 우선 댓글'은 가장 많이 등장한 '정보'를 중심으로 '후기 - 효과 - 도움'의 연결이 두드러졌다. 세 단어는 댓글 빈도 상위권 단어이기도 하다. ‘후기’, ‘효과’, ‘도움’은 단순히 자주 나온 단어를 넘어, '정보'와 함께 묶여 반복되는 표현인 것이다. 이는 "도움이 됐다", "효과를 봤다"는 식의 추천 후기를 남기는 동시에, 구매처나 링크 등 특정 정보를 요구하거나 직접 제공하는 댓글이 상당수임을 뜻한다. '검토 낮음' 게시글의 댓글은 '효과-꾸준히-먹다'라는 연결고리가 두드러졌다. "꾸준히 먹으니 효과가 있다"와 같이 실사용자의 전형적인 경험 공유가 주를 이룬 것이다.</p>
+        <p>결정적 차이는 '정보'라는 핵심어와의 연결이다. '검토 우선' 게시글의 댓글은 소비자의 자연스러운 경험 공유보다는, 특정 정보로의 진입을 노리는 '정보 유도형 댓글'의 특성이 강하다. 반면, '검토 낮음' 게시글의 댓글은 소비자의 '실사용 후기'에 가깝다.</p> <p>물론, 이 결과 하나만으로 ‘제품을 설득하는 댓글’과 ‘경험을 말하는 댓글'의 차이를 단언할 수 없다. 취재진은 보다 상세한 분석을 위해 직접 사례를 선별하고 검토하기로 했다.</p>
       </div>
     </section>
 
     <section class="article-section section-fade">
       <div class="article-body">
         <h2>50건 사례에서 드러난 구매 유도 흐름</h2>
-        <p>취재진은 더 정확한 판단을 위해 13개 의심 지표 가운데 다수를 충족한 50건의 게시글 전문과 댓글을 별도로 선별하여 심층 취재를 진행했다.</p>
+        <p>13개 의심 지표 가운데 다수를 충족한 게시글 중 댓글이 가장 많은 50건을 선별했다. 그 후, 게시글과 댓글 전문을 대상으로 심층 분석을 진행했다.</p>
         <p>취재진이 직접 검토한 의심 사례 게시글 50건에서 댓글 구조는 더욱 뚜렷하게 확인됐다.</p>
       </div>
-      <figure class="wide-image wide-visual compact-image"><img alt="댓글 속 구매 유도 링크 사례" src="./assets/photo_01.png"/></figure>
+      <figure class="wide-image wide-visual compact-image"><img alt="댓글 속 구매 유도 링크 사례" src="./assets/photo_01.png"/><figcaption>50건 사례 중 스텔스 마케팅 의심 댓글의 대표적 사례</figcaption></figure>
       <div class="article-body">
         <p>첫째, 작성자가 제품 사용 경험을 공유하는 게시글을 기재했다. 단, 제품명은 특정하지 않았다. 둘째, 다른 이용자가 정보나 구매처를 물었다. 셋째, '게시글 작성자가 아닌' 또 다른 이용자가 제품을 칭찬하거나 구매 링크를 제공했다.</p>
         <p>겉으로는 자연스러운 대화처럼 보였다. 하지만 같은 흐름이 여러 게시글에서 반복됐다. 소비자는 직접 정보를 찾아낸다고 느끼지만 실제로는 질문과 답변을 따라가다 구매 페이지에 도착한다. 광고는 보이지 않고, 경험담과 댓글이 소비자를 움직인다.</p>
       </div>
-      <figure class="wide-image wide-visual compact-image"><img alt="동일 제품 게시글에서 반복되는 댓글 역할 사례" src="./assets/photo_02.png"/></figure>
+      <figure class="wide-image wide-visual compact-image"><img alt="동일 제품 게시글에서 반복되는 댓글 역할 사례" src="./assets/photo_02.png"/><figcaption>동일한 작성자를 여러 광고 의심 게시글에서 반복적으로 확인함(같은 색의 박스는 동일 사용자로 모자이크 처리함)</figcaption></figure>
       <div class="article-body">
         <p>광고는 보이지 않고, 경험담과 댓글이 소비자를 움직인다. 취재진은 직접 검토한 게시글 일부에서 동일하거나 유사한 계정이 반복적으로 등장하는 정황을 포착했다. 한 게시글에서 구매 링크를 제공하던 계정이 다른 게시글에서는 제품을 묻는 질문자로 등장했다. 반대로 질문자였던 계정이 다른 게시글에서는 구매링크를 제공했다. 이 댓글들은 모두 동일한 제품을 다룬 게시글이었다.</p>
       </div>
@@ -131,7 +132,7 @@
         <h2>대행사가 설계한 바이럴 마케팅의 공장</h2>
         <p>취재진은 스텔스 마케팅 의심 구조가 실제 바이럴 마케팅 시장에서 어떻게 상품화되는지 확인했다. 온라인에서는 관련 대행 업무를 공개적으로 홍보하는 업체를 어렵지 않게 찾을 수 있었다.</p>
       </div>
-      <figure class="wide-image wide-visual agency-image"><img alt="바이럴 마케팅 대행사 예시 화면" src="./assets/photo_04.jpg"/></figure>
+      <figure class="wide-image wide-visual agency-image"><img alt="바이럴 마케팅 대행사 예시 화면" src="./assets/photo_04.jpg"/><figcaption>실제 대규모 바이럴 마케팅 대행사 홈페이지 화면. 상·하단은 각각 다른 대행사의 사이트 화면임.</figcaption></figure>
       <div class="article-body">
         <p>한 대행사는 ‘Q&amp;A형’, ‘후기형’, ‘핫딜형’, ‘정보배포형’을 제시했다. 질문형 게시글과 답변형 댓글, 후기 콘텐츠, URL과 상품 정보를 조합해 자연스러운 홍보 효과를 유도하는 방식이었다.</p>
         <p>다른 대행사 자료에서도 맞춤형 원고 작성, 사진 콘텐츠 구성,  게시글·고객 소통 관리 등이 서비스 항목으로 제시됐다. 단순 게시글 작성이 아니라 게시 이후의 반응까지 관리 대상으로 삼고 있었다.</p>
@@ -160,11 +161,26 @@
 
     <section id="criteria-section" class="article-section section-fade">
       <div class="article-body">
-        <h2>소비자의 비판적 읽기, 사회의 책임</h2>
+        <h2>소비자의 비판적 읽기, 플랫폼·광고업계·규제기관 검토도 필요해...</h2>
         <p>취재진은 이번 분석에 활용한 13개 의심 지표를 소비자용 체크리스트로 정리했다.</p>
       </div>
-      <div class="full-visual visual-card criteria-card">
-      <div class="visual-head"><h3>스텔스 마케팅 의심 신호 지표</h3></div>
+      <div class="article-body">
+        <p>이 체크리스트는 광고 여부를 판정하는 도구가 아니다. 몇 개 항목에 해당한다고 해서 스텔스 마케팅으로 단정 지을 수 없다. 다만, 소비자가 비판적 읽기를 위한 참고 기준은 될 수 있다.</p>
+      </div>
+      <figure class="wide-image wide-visual food-safety-image"><img alt="식품안전나라 화면" src="./assets/photo_06.png"/><figcaption>식품안전나라 건강기능식품 검색 사이트 실제 화면(https://www.foodsafetykorea.go.kr/portal/healthyfoodlife/searchHomeHF.do)</figcaption></figure>
+      <div class="article-body">
+        <p>건강기능식품과 식품 관련 제품은 공식 정보 확인도 필요하다. 식품안전나라 건강기능식품 검색에서는 품목신고 제품 정보를 조회할 수 있다.</p>
+        <p>소비자가 조심하는 것만으로는 부족하다. 플랫폼은 반복 계정과 구매 링크 댓글을 더 적극적으로 감지해야 한다. 광고 업계는 제품 제공이나 대가 지급 사실을 소비자가 쉽게 알아볼 수 있게 표시해야 한다. 규제기관도 스텔스 마케팅에 어떻게 대응할 것인지 다시 한번 검토해야 한다.</p>
+        <p>이번 취재가 확인한 것은 하나의 제품이나 하나의 계정이 아니다. 온라인 후기 생태계 안에서 광고와 경험담의 경계가 흐려지고 있다는 사실이다. 후기는 소비자의 경험이어야 한다. 광고라면 광고라고 말해야 한다.</p>
+      </div>
+    </section>
+
+    <section id="criteria-appendix" class="article-section section-fade appendix-section">
+      <div class="article-body">
+        <h2>부록: 스텔스 마케팅 의심 신호 지표</h2>
+        <p>취재진이 분석에 활용한 13개 의심 지표를 정리했다.</p>
+      </div>
+      <div class="wide-visual visual-card criteria-card criteria-card--appendix">
       <details class="analysis-toggle criteria-toggle">
       <summary>의심 신호 지표 보기</summary>
       <div class="table-wrap">
@@ -360,17 +376,8 @@
       </div>
       </details>
       </div>
-      <div class="article-body">
-        <p>이 체크리스트는 광고 여부를 판정하는 도구가 아니다. 몇 개 항목에 해당한다고 해서 스텔스 마케팅으로 단정 지을 수 없다. 다만, 소비자가 비판적 읽기를 위한 참고 기준은 될 수 있다.</p>
-      </div>
-      <figure class="wide-image wide-visual"><img alt="식품안전나라 화면" src="./assets/photo_06.png"/></figure>
-      <div class="article-body">
-        <p>건강기능식품과 식품 관련 제품은 공식 정보 확인도 필요하다. 식품안전나라 건강기능식품 검색에서는 품목신고 제품 정보를 조회할 수 있다.</p>
-        <p>식약처는 온라인에서 기능성을 인정받은 건강기능식품을 구매하려면 제품에 표시된 ‘건강기능식품 인증마크’를 확인하라고 당부한 바 있다.</p>
-        <p>소비자가 조심하는 것만으로는 부족하다. 플랫폼은 반복 계정과 구매 링크 댓글을 더 적극적으로 감지해야 한다. 광고 업계는 제품 제공이나 대가 지급 사실을 소비자가 쉽게 알아볼 수 있게 표시해야 한다. 규제기관도 스텔스 마케팅에 어떻게 대응할 것인지 다시 한번 검토해야 한다.</p>
-        <p>이번 취재가 확인한 것은 하나의 제품이나 하나의 계정이 아니다. 온라인 후기 생태계 안에서 광고와 경험담의 경계가 흐려지고 있다는 사실이다. 후기는 소비자의 경험이어야 한다. 광고라면 광고라고 말해야 한다.</p>
-      </div>
     </section>
+
 </main>
 <footer class="site-footer">
 <p>데이터저널리즘 프로젝트 웹페이지</p>

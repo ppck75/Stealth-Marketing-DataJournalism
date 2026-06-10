@@ -203,7 +203,7 @@ function getNormalizedWordCloudData() {
   const minCount = rows[rows.length - 1]?.count || 1;
   return rows.map(row => ({
     ...row,
-    size: 26 + ((row.count - minCount) / Math.max(1, maxCount - minCount)) * 62
+    size: 30 + ((row.count - minCount) / Math.max(1, maxCount - minCount)) * 78
   }));
 }
 
@@ -212,7 +212,7 @@ function renderWordCloudOnly() {
   if (!container || !window.d3 || !d3.layout || !d3.layout.cloud) return;
   const words = getNormalizedWordCloudData();
   const width = container.clientWidth || 900;
-  const height = Math.max(430, Math.min(620, Math.round(width * 0.6)));
+  const height = Math.max(390, Math.min(520, Math.round(width * 0.48)));
   const svg = d3.select(container).append("svg").attr("viewBox", `0 0 ${width} ${height}`).attr("width", "100%").attr("height", height);
   d3.layout.cloud()
     .size([width, height])
@@ -266,8 +266,8 @@ function renderOverallRiskSingleBar(selector, label, rows, color, tooltip) {
   const container = document.querySelector(selector);
   if (!container) return;
   const width = container.clientWidth || 520;
-  const height = 390;
-  const margin = { top: 16, right: 54, bottom: 30, left: 96 };
+  const height = 340;
+  const margin = { top: 16, right: 54, bottom: 18, left: 96 };
   const svg = d3.select(selector)
     .append("svg")
     .attr("viewBox", `0 0 ${width} ${height}`)
