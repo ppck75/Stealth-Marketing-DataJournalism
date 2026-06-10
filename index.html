@@ -84,6 +84,7 @@
       <div class="visual-head"><h3>댓글 상위 10단어: 검토 우선 vs 검토 낮음</h3></div>
       <div class="chart-grid" id="overall-risk-bar-grid"></div>
       <div id="overall-risk-bar-tooltip" class="tooltip"></div>
+      <figcaption>검토 우선 게시글 댓글과 검토 낮음 게시글 댓글에서 자주 등장한 단어 10개를 비교한 그래프.</figcaption>
       </div>
       <div class="article-body">
         <p>각 분류별 댓글 상위 10단어를 살펴보니 '검토 우선 댓글'에는  '후기', '제품','도움'처럼 정보 제공형 단어가 두드러졌다. 반면, 검토 낮음 댓글에는 '꾸준히', '먹다','효과'처럼 사용 경험형 단어가 두드러졌다. '프로폴리스','미녹시딜' 같은 성분이 직접 언급되기도 하였다.</p>
@@ -96,6 +97,7 @@
       <label>최소 동시출현 <input id="overall-risk-edge-count" max="20" min="5" type="range" value="10"/> <output id="overall-risk-edge-out">10</output></label>
       </div>
       <div class="chart-grid" id="overall-risk-network-grid"></div>
+      <figcaption>검토 우선 댓글과 검토 낮음 댓글에서 단어가 함께 등장한 관계를 비교한 의미연결망. 기본값은 표시 단어 수 6개, 최소 동시출현 10회다.</figcaption>
       </div>
       <div class="article-body">
         <p>'검토 우선 댓글'은 가장 많이 등장한 '정보'를 중심으로 '후기 - 효과 - 도움'의 연결이 두드러졌다. ‘후기’, ‘효과’, ‘도움’은 단순히 자주 나온 단어에 그치지 않았다. 세 단어는 함께 묶여 반복되는 표현이었다. '검토 낮음 댓글'에서 '효과-꾸준히-먹다' 역시 동시에 출현했다.</p>

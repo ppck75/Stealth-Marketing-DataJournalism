@@ -284,10 +284,6 @@ function renderOverallRiskSingleBar(selector, label, rows, color, tooltip) {
 
   svg.append("g")
     .attr("class", "axis")
-    .attr("transform", `translate(0,${height - margin.bottom})`)
-    .call(d3.axisBottom(x).ticks(4).tickFormat(d3.format(",")));
-  svg.append("g")
-    .attr("class", "axis")
     .attr("transform", `translate(${margin.left},0)`)
     .call(d3.axisLeft(y));
   svg.selectAll("rect.bar")
