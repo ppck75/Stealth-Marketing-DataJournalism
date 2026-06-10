@@ -105,6 +105,12 @@ h2 {
 .article-body h2:not(:first-child) {
   margin-top: 42px;
 }
+.article-body--wide-heading {
+  width: min(100%, 980px);
+}
+.single-line-heading {
+  white-space: nowrap;
+}
 p {
   margin: 0 0 22px;
   font-size: 18px;
@@ -119,7 +125,7 @@ blockquote {
   border-left: 4px solid var(--accent);
   background: #ffffff;
   color: #111111;
-  font-size: clamp(21px, 2.6vw, 30px);
+  font-size: clamp(18px, 1.9vw, 23px);
   line-height: 1.65;
   font-weight: 700;
   box-shadow: inset 0 0 0 1px rgba(14, 165, 233, .18);
