@@ -384,6 +384,14 @@ th { background: #eef7ff; color: #1f2937; font-weight: 800; }
 .interview-image img {
   margin: 0 auto;
 }
+.student-image {
+  width: min(100%, 860px);
+  margin-top: 30px;
+  margin-bottom: 34px;
+}
+.student-image img {
+  margin: 0 auto;
+}
 .mfds-image {
   width: min(100%, 680px);
   margin-top: 30px;
