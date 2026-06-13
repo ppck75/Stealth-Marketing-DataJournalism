@@ -456,7 +456,6 @@ th { background: #eef7ff; color: #1f2937; font-weight: 800; }
   line-height: 1.45;
   box-shadow: 0 10px 24px rgba(0,0,0,.22);
   z-index: 50;
-  transform: translate(10px, -10px);
 }
 .tooltip strong { display: block; margin-bottom: 3px; }
 .section-fade {

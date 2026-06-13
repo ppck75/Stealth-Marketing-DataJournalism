@@ -300,19 +300,17 @@ function renderOverallRiskSingleBar(selector, label, rows, color, tooltip) {
     .on("mouseenter", (event, d) => {
       d3.select(event.currentTarget).attr("opacity", 1);
       if (tooltip) {
-        tooltip.style.opacity = 1;
-        tooltip.innerHTML = `<strong>${label} · ${d.word}</strong>등장 횟수: ${Number(d.count).toLocaleString()}회<br>비율: ${Number(d.ratio).toFixed(2)}%`;
+        showTooltip(tooltip, `<strong>${label} · ${d.word}</strong>등장 횟수: ${Number(d.count).toLocaleString()}회<br>비율: ${Number(d.ratio).toFixed(2)}%`, event);
       }
     })
     .on("mousemove", event => {
       if (tooltip) {
-        tooltip.style.left = event.clientX + "px";
-        tooltip.style.top = event.clientY + "px";
+        moveTooltip(tooltip, event);
       }
     })
     .on("mouseleave", event => {
       d3.select(event.currentTarget).attr("opacity", .88);
-      if (tooltip) tooltip.style.opacity = 0;
+      if (tooltip) hideTooltip(tooltip);
     });
   svg.selectAll("text.bar-label")
     .data(rows)
@@ -492,11 +490,10 @@ function renderBarChart(selector, label, rows, color, tooltip) {
     .attr("opacity", .88)
     .on("mouseenter", (event, d) => {
       d3.select(event.currentTarget).attr("opacity", 1);
-      tooltip.style.opacity = 1;
-      tooltip.innerHTML = `<strong>${label} · ${d.word}</strong>등장 횟수: ${Number(d.count).toLocaleString()}회`;
+      showTooltip(tooltip, `<strong>${label} · ${d.word}</strong>등장 횟수: ${Number(d.count).toLocaleString()}회`, event);
     })
-    .on("mousemove", event => { tooltip.style.left = event.clientX + "px"; tooltip.style.top = event.clientY + "px"; })
-    .on("mouseleave", event => { d3.select(event.currentTarget).attr("opacity", .88); tooltip.style.opacity = 0; });
+    .on("mousemove", event => moveTooltip(tooltip, event))
+    .on("mouseleave", event => { d3.select(event.currentTarget).attr("opacity", .88); hideTooltip(tooltip); });
   svg.selectAll("text.bar-label").data(rows).join("text")
     .attr("class", "bar-label")
     .attr("x", d => x(d.count) + 7)
@@ -585,6 +582,33 @@ function ensureTooltip() {
     document.body.appendChild(tooltip);
   }
   return tooltip;
+}
+
+function showTooltip(tooltip, html, event) {
+  if (!tooltip) return;
+  if (tooltip.parentElement !== document.body) {
+    document.body.appendChild(tooltip);
+  }
+  tooltip.innerHTML = html;
+  tooltip.style.opacity = 1;
+  moveTooltip(tooltip, event);
+}
+
+function moveTooltip(tooltip, event) {
+  if (!tooltip || !event) return;
+  const gap = 14;
+  const rect = tooltip.getBoundingClientRect();
+  const maxLeft = window.innerWidth - rect.width - gap;
+  const maxTop = window.innerHeight - rect.height - gap;
+  const left = Math.max(gap, Math.min(event.clientX + gap, maxLeft));
+  const top = Math.max(gap, Math.min(event.clientY + gap, maxTop));
+  tooltip.style.left = `${left}px`;
+  tooltip.style.top = `${top}px`;
+}
+
+function hideTooltip(tooltip) {
+  if (!tooltip) return;
+  tooltip.style.opacity = 0;
 }
 
 function chartColor(label) {
