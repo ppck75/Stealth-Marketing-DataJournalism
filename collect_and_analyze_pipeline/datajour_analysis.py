@@ -5,9 +5,9 @@ Add your own indicator functions/prompts in the marked sections when ready.
 
 Examples:
     python datajour_analysis.py --mode audit
-    python datajour_analysis.py --mode audit --input-csv /home/pck/data_jour/crawl_data_비염.csv
-    python datajour_analysis.py --mode export-llm-input --input-csv /home/pck/data_jour/crawl_data_비염.csv --limit 20
-    python datajour_analysis.py --mode llm --input-csv /home/pck/data_jour/crawl_data_비염.csv --limit 20
+    DATA_JOUR_BASE_DIR=/path/to/data python datajour_analysis.py --mode audit
+    python datajour_analysis.py --mode export-llm-input --input-csv crawl_data_비염.csv --limit 20
+    python datajour_analysis.py --mode llm --input-csv crawl_data_비염.csv --limit 20
 """
 
 from __future__ import annotations
@@ -25,7 +25,7 @@ import pandas as pd
 import requests
 
 
-BASE_DIR = Path("/home/pck/data_jour")
+BASE_DIR = Path(os.getenv("DATA_JOUR_BASE_DIR", ".")).expanduser().resolve()
 OUTPUT_DIR = BASE_DIR / "analysis_outputs"
 CHAT_KHU_BASE_URL = "https://factchat-cloud.mindlogic.ai/v1/gateway"
 CHAT_KHU_CHAT_COMPLETIONS_URL = f"{CHAT_KHU_BASE_URL}/chat/completions"
@@ -432,8 +432,8 @@ def get_chat_khu_client():
     load_dotenv()
     api_key = os.getenv("CHAT_KHU")
     if not api_key:
-        raise RuntimeError("CHAT_KHU 환경변수를 찾을 수 없습니다. /home/pck/data_jour/.env를 확인하세요.")
-    print(f"Chat KHU API Key 로드 성공: {api_key[:5]}...")
+        raise RuntimeError("CHAT_KHU 환경변수를 찾을 수 없습니다. DATA_JOUR_BASE_DIR의 .env를 확인하세요.")
+    print("Chat KHU API Key 로드 성공")
     return api_key
 
 
